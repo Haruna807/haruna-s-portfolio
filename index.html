@@ -11,13 +11,47 @@
 
   <link rel="icon" href="favicon.ico">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/recet.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  
-  <p>test</p>
+  <div class="wrapper">
 
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="/"><img src="./img/header-logo.png" alt="Haruna"></a>
+      </h1>
+      <nav class="header__nav">
+        <a href="#about" class="header__link">About</a>
+        <a href="#works" class="header__link">Works</a>
+        <a href="#contact" class="header__link">Contact</a>
+      </nav>
+      <button id="js-drawer-icon" class="header_open drawer-icon">
+        <span class="drawer-icon_bar"></span>
+        <span class="drawer-icon_bar"></span>
+        <span class="drawer-icon_bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="js-drawer-content" class="drawer__content">
+    <nav class="drawer__content-menu">
+      <a href="#about" class="drawer__content-link">About</a>
+      <a href="#works" class="drawer__content-link">Works</a>
+      <a href="#contact" class="drawer__content-link">Contact</a>
+    </nav>
+  </div>
+
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>
