@@ -24,9 +24,27 @@ $breakpoints: (
 
 // 共通
 
+body {
+  font-family: $font-family;
+  color: $text-color;
+}
+
 .wrapper {
   overflow: hidden;
 }
+
+// ボタン
+
+.button {
+  display: block;
+  width: 150px;
+  height: 38px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 50px;
+  text-align: center;
+}
+
 
 // ヘッダー
 
@@ -156,11 +174,12 @@ $breakpoints: (
 }
 
 .drawer__content-menu {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .drawer__content-link {
-  display: block;
+  display: inline-block;
   padding-top: 14px;
   padding-bottom: 14px;
   text-align: center;
@@ -168,6 +187,18 @@ $breakpoints: (
   font-size: 14px;
   letter-spacing: 0.48px;
   color: #fff;
+  position: relative;
+
+  &::before {
+    content: "";
+    border-top: 1px solid #fff;
+    width: 13px;
+    height: 1px;
+    position: absolute;
+    left: 97px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 
