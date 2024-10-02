@@ -1,0 +1,156 @@
+@use "sass:map";
+@use "variable";
+
+.header {
+  height: variable.$header-height-sp;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.header__inner {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include variable.mq("md") {
+    padding-right: 60px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  a {
+    img {
+      width: 146px;
+
+      @include variable.mq("md") {
+        width: 262px;
+      }
+    }
+  }
+}
+
+.header__nav {
+  display: none;
+
+  @include variable.mq("md") {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.header__link {
+
+}
+
+.header_open {
+
+  @include variable.mq("md") {
+    display: none;
+  }
+}
+
+.drawer-icon {
+  width: 49px;
+  height: 49px;
+  position: relative;
+  z-index: 51;
+  background-color: #000;
+
+  &.is-checked {
+    .drawer-icon_bar {
+      &:nth-of-type(1) {
+        top: 21px;
+        transform: rotate(40deg);
+      }
+
+      &:nth-of-type(2) {
+        display: none;
+      }
+
+      &:nth-of-type(3) {
+        top: 21px;
+        transform: rotate(-40deg);
+      }
+    }
+  }
+}
+
+.drawer-icon_bar {
+  position: absolute;
+  top: 15px;
+  left: 30%;
+  width: 20px;
+  height: 1px;
+  border-radius: 6px;
+  background: #fff;
+  transition: transform 0.3s linear, top 0.3s linear;
+
+  &:nth-of-type(1) {
+
+  }
+
+  &:nth-of-type(2) {
+    top: 24px;
+  }
+
+  &:nth-of-type(3) {
+    top: 33px;
+  }
+}
+
+
+// ドロワーメニュー
+
+.drawer__content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #000;
+  z-index: 50;
+  padding: 86px 40px 40px;
+  transform: translateX(100%);
+  transition: transform 0.3s linear;
+
+  &.is-checked {
+    transform: translateX(0);
+  }
+}
+
+.drawer__content-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer__content-link {
+  display: inline-block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.48px;
+  color: #fff;
+  position: relative;
+
+  &::before {
+    content: "";
+    border-top: 1px solid #fff;
+    width: 13px;
+    height: 1px;
+    position: absolute;
+    left: 97px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

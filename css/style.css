@@ -1,22 +1,3 @@
-body {
-  font-family: "Inter", system-ui;
-  color: #000;
-}
-
-.wrapper {
-  overflow: hidden;
-}
-
-.button {
-  display: block;
-  width: 150px;
-  height: 38px;
-  background-color: #000;
-  color: #fff;
-  padding: 10px 50px;
-  text-align: center;
-}
-
 .header {
   height: 48px;
   background-color: #fff;
@@ -47,6 +28,9 @@ body {
 }
 
 .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -177,4 +161,125 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__image {
+  text-align: center;
+}
+.about__image img {
+  width: 180px;
+}
+
+.about__content__wrap {
+  margin-top: 30px;
+  margin-left: 10%;
+}
+
+.about__name {
+  margin-top: 17px;
+}
+
+.about__name__ja {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 1.6px;
+}
+@media screen and (min-width:768px) {
+  .about__name__ja {
+    font-size: 20px;
+  }
+}
+
+.about__name__en {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.6px;
+}
+@media screen and (min-width:768px) {
+  .about__name__en {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.about__text {
+  margin-top: 23px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+@media screen and (min-width:768px) {
+  .about__text {
+    font-size: 15px;
+  }
+}
+
+.about__button {
+  margin-top: 27px;
+}
+
+body {
+  font-family: "Inter", system-ui;
+  color: #000;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.button {
+  display: block;
+  width: 112px;
+  height: 26px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 5px;
+}
+
+.heading {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width:768px) {
+  .heading {
+    font-size: 23px;
+  }
+}
+.heading::before, .heading::after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: #000;
+}
+@media screen and (min-width:768px) {
+  .heading::before, .heading::after {
+    width: 20px;
+  }
+}
+.heading::before {
+  margin-right: 10px;
+}
+.heading::after {
+  margin-left: 10px;
 }

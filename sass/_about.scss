@@ -1,0 +1,82 @@
+@use "sass:map";
+@use "variable";
+
+.about {
+
+}
+
+.about__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__image__wrap {
+
+}
+
+.about__image {
+  text-align: center;
+  img {
+    width: 180px;
+  }
+}
+
+.about__content__wrap {
+  margin-top: 30px;
+  margin-left: 10%;
+}
+
+
+.about__heading {
+
+}
+
+.about__content {
+  
+}
+
+.about__name {
+  margin-top: 17px;
+}
+
+.about__name__ja {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 1.6px;
+
+  @include variable.mq("md") {
+    font-size: 20px;
+  }
+}
+
+.about__name__en {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.0;
+  letter-spacing: 1.6px;
+
+  @include variable.mq("md") {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.about__text {
+  margin-top: 23px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
+}
+
+.about__button {
+  margin-top: 27px;
+}
+
+
+
