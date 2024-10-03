@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   height: 48px;
   background-color: #fff;
@@ -169,6 +170,86 @@
           transform: translateY(-50%);
 }
 
+.fv {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding-left: 48px;
+  overflow: hidden;
+}
+
+.fv__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.fv__inner img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* 画像の表示方法を調整 */
+  position: absolute; /* 絶対位置に設定 */
+  top: 0;
+  left: 0;
+  opacity: 0; /* 初期状態は透明 */
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+.fv__inner img.active {
+  opacity: 1;
+}
+
+.fv__logo {
+  position: absolute; /* 絶対位置に設定 */
+  top: 50%; /* 縦中央 */
+  left: 50%; /* 横中央 */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.fv__logo-1,
+.fv__logo-2 {
+  opacity: 0; /* 初期状態は透明 */
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards; /* フェードインアニメーション */
+}
+
+.fv__logo-1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.fv__logo-2 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; /* 最初は透明 */
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%); /* 少し上から */
+  }
+  100% {
+    opacity: 1; /* 最後は表示 */
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); /* センタリング */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* 最初は透明 */
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%); /* 少し上から */
+  }
+  100% {
+    opacity: 1; /* 最後は表示 */
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); /* センタリング */
+  }
+}
 @media screen and (min-width:768px) {
   .about {
     margin-top: 46px;
@@ -254,6 +335,11 @@
 
 .about__name {
   margin-top: 17px;
+}
+@media screen and (min-width:768px) {
+  .about__name {
+    margin-top: 30px;
+  }
 }
 
 .about__name__ja {
@@ -351,6 +437,141 @@
 
 .skill__item__image {
   width: 70px;
+}
+
+.contact {
+  background: linear-gradient(96deg, rgba(230, 238, 207, 0.28) 0%, rgba(191, 206, 236, 0.31) 0.01%, rgba(216, 153, 216, 0.27) 96.62%, rgba(219, 148, 214, 0.26) 96.63%);
+}
+
+.contact__inner {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media screen and (min-width:768px) {
+  .contact__inner {
+    padding-bottom: 100px;
+  }
+}
+
+.contact__heading {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px !important;
+}
+@media screen and (min-width:768px) {
+  .contact__heading {
+    font-size: 28px !important;
+  }
+}
+
+.contact__content {
+  text-align: center;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width:768px) {
+  .contact__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 157px;
+  }
+}
+
+.contact__mail__icon {
+  width: 80px;
+  margin-inline: auto;
+}
+@media screen and (min-width:768px) {
+  .contact__mail__icon {
+    width: 100px;
+  }
+}
+
+.contact__mail__link {
+  font-size: 12px;
+  margin-top: 11px;
+}
+@media screen and (min-width:768px) {
+  .contact__mail__link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .contact__x {
+    width: 178px;
+  }
+}
+
+.contact__x__icon {
+  width: 83px;
+  margin-inline: auto;
+}
+@media screen and (min-width:768px) {
+  .contact__x__icon {
+    width: 100px;
+  }
+}
+
+.contact__x__link {
+  font-size: 12px;
+  margin-top: 11px;
+}
+@media screen and (min-width:768px) {
+  .contact__x__link {
+    font-size: 15px;
+  }
+}
+
+.footer {
+  background-color: #000;
+}
+
+.footer__inner {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width:768px) {
+  .footer__inner {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+.footer__x__icon {
+  width: 30px;
+  margin-inline: auto;
+  margin-bottom: 8px;
+}
+@media screen and (min-width:768px) {
+  .footer__x__icon {
+    width: 40px;
+    margin-bottom: 14px;
+  }
+}
+
+.footer__copyright {
+  color: #fff;
+  font-size: 9px;
+}
+@media screen and (min-width:768px) {
+  .footer__copyright {
+    font-size: 12px;
+  }
 }
 
 body {
