@@ -9,6 +9,11 @@
   width: 100%;
   z-index: 1000;
   box-sizing: border-box;
+  position: fixed;
+
+  @include variable.mq("md") {
+    height: variable.$header-height-pc;
+  }
 }
 
 .header__inner {

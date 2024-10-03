@@ -39,6 +39,14 @@ body {
   overflow: hidden;
 }
 
+.main {
+  margin-top: variable.$header-height-sp;
+
+  @include variable.mq("md") {
+    margin-top: variable.$header-height-pc;
+  }
+}
+
 // ボタン
 
 .button {
@@ -51,6 +59,14 @@ body {
   font-size: 12px;
   letter-spacing: 3px;
   padding: 5px;
+
+  @include variable.mq("md") {
+    width: 170px;
+    height: 38px;
+    font-size: 15px;
+    letter-spacing: 6px;
+    padding: 10px;
+  }
 }
 
 

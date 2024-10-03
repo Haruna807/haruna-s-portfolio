@@ -2,28 +2,65 @@
 @use "variable";
 
 .about {
-
+  @include variable.mq("md") {
+    margin-top: 46px;
+  }
 }
 
 .about__inner {
   display: flex;
   flex-direction: column;
+
+  @include variable.mq("md") {
+    flex-direction: row;
+    gap: 121px;
+    margin-right: 10px;
+  }
 }
 
 .about__image__wrap {
+  @include variable.mq("md") {
+    width: 648px;
+    height: 520px;
+    background: linear-gradient(96deg, rgba(230, 238, 207, 0.28) 0%, rgba(191, 206, 236, 0.31) 0.01%, rgba(216, 153, 216, 0.27) 96.62%, rgba(219, 148, 214, 0.26) 96.63%);
+    display: flex;
+    align-items: center;
 
+  }
 }
 
 .about__image {
   text-align: center;
+
+  @include variable.mq("md") {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+  }
+
   img {
     width: 180px;
+
+    @include variable.mq("md") {
+      width: 300px;
+      height: 300px;
+    }
   }
 }
 
 .about__content__wrap {
   margin-top: 30px;
   margin-left: 10%;
+
+  @include variable.mq("md") {
+    margin-left: 0;
+    margin-top: 65px;
+  }
 }
 
 
@@ -71,6 +108,7 @@
 
   @include variable.mq("md") {
     font-size: 15px;
+    line-height: 1.9;
   }
 }
 
