@@ -195,23 +195,31 @@
   transition: opacity 3s ease-in-out; /* 背景画像の切り替えを滑らかに */
   opacity: 1;
   z-index: 0; /* 画像の下に配置 */
+  background-position: center center;
 }
 
 .fv__logo {
   position: absolute; /* 絶対位置に設定 */
   top: 50%; /* 縦中央 */
-  left: 40%; /* 横中央を少し左に移動（必要に応じて調整） */
+  left: 75%; /* 横中央を少し左に移動（必要に応じて調整） */
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); /* センタリング */
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; /* 子要素を横に並べるために追加 */
-  gap: 10px; /* ロゴ間の距離を縮めるために追加 */
+  gap: 12px; /* ロゴ間の距離を縮めるために追加 */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* 子要素を中央揃え */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 160px;
 }
 
 .fv__logo-1,
@@ -220,15 +228,20 @@
   -webkit-animation: fadeIn 1s forwards;
           animation: fadeIn 1s forwards; /* フェードインアニメーション */
 }
+.fv__logo-1 img,
+.fv__logo-2 img {
+  width: auto; /* 自動サイズ */
+  height: 100%;
+}
 
 .fv__logo-1 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s; /* 0.5秒遅延 */
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; /* 0.5秒遅延 */
 }
 
 .fv__logo-2 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s; /* 1秒遅延 */
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s; /* 1秒遅延 */
 }
 
 @-webkit-keyframes fadeIn {
@@ -255,6 +268,9 @@
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); /* センタリング */
   }
+}
+.about {
+  margin-top: 60px;
 }
 @media screen and (min-width:768px) {
   .about {

@@ -2,6 +2,8 @@
 @use "variable";
 
 .about {
+  margin-top: 60px;
+
   @include variable.mq("md") {
     margin-top: 46px;
   }
