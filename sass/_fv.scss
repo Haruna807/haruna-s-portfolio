@@ -1,72 +1,6 @@
 @use "sass:map";
 @use "variable";
 
-// .fv {
-//   position: relative;
-//   width: 100%;
-//   height: 600px;
-//   padding-left: 48px;
-//   overflow: hidden;
-// }
-
-// .fv__inner {
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-
-//   img {
-//     width: auto;
-//     height: 100%;
-//     object-fit: cover; /* 画像の表示方法を調整 */
-//     position: absolute; /* 絶対位置に設定 */
-//     top: 0;
-//     left: 0;
-//     opacity: 0; /* 初期状態は透明 */
-//     transition: opacity 1s ease;
-
-//     &.active {
-//       opacity: 1;
-//     }
-//   }
-// }
-
-// .active {
-
-// }
-
-// .fv__logo {
-//   position: absolute; /* 絶対位置に設定 */
-//   top: 50%; /* 縦中央 */
-//   left: 50%; /* 横中央 */
-//   transform: translate(-50%, -50%);
-//   z-index: 100;
-// }
-
-// .fv__logo-1,
-// .fv__logo-2 {
-//   opacity: 0; /* 初期状態は透明 */
-//   animation: fadeIn 1s forwards; /* フェードインアニメーション */
-// }
-
-// .fv__logo-1 {
-//   animation-delay: 0.5s;
-// }
-
-// .fv__logo-2 {
-//   animation-delay: 1.5s;
-// }
-
-// @keyframes fadeIn {
-//   0% {
-//     opacity: 0; /* 最初は透明 */
-//     transform: translate(-50%, -30%); /* 少し上から */
-//   }
-//   100% {
-//     opacity: 1; /* 最後は表示 */
-//     transform: translate(-50%, -50%); /* センタリング */
-//   }
-// }
-
 
 .fv {
   position: relative;
@@ -74,6 +8,11 @@
   height: 600px; /* 必要に応じて高さを調整 */
   overflow: hidden;
   padding-left: 48px;
+
+  @include variable.mq("md") {
+    padding-left: 116px;
+    height: 900px;
+  }
 }
 
 .fv__inner {
@@ -92,14 +31,14 @@
   transition: opacity 3s ease-in-out; /* 背景画像の切り替えを滑らかに */
   opacity: 1;
   z-index: 0; /* 画像の下に配置 */
-  background-position: center center;
+  background-position: top center;
 }
 
 .fv__logo {
   position: absolute; /* 絶対位置に設定 */
   top: 50%; /* 縦中央 */
-  left: 75%; /* 横中央を少し左に移動（必要に応じて調整） */
-  transform: translate(-50%, -50%); /* センタリング */
+  left: 50%; /* 横中央を少し左に移動（必要に応じて調整） */
+  transform: translateY(-50%);
   z-index: 10;
   display: flex; /* 子要素を横に並べるために追加 */
   gap: 12px; /* ロゴ間の距離を縮めるために追加 */
@@ -107,6 +46,12 @@
   justify-content: center; /* 子要素を中央揃え */
   align-items: center;
   width: 160px;
+
+  @include variable.mq("md") {
+    top: 57%;
+    left: 50%;
+    width: 513px;
+  }
   
 }
 

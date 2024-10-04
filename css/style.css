@@ -177,6 +177,12 @@
   overflow: hidden;
   padding-left: 48px;
 }
+@media screen and (min-width:768px) {
+  .fv {
+    padding-left: 116px;
+    height: 900px;
+  }
+}
 
 .fv__inner {
   position: relative;
@@ -195,15 +201,15 @@
   transition: opacity 3s ease-in-out; /* 背景画像の切り替えを滑らかに */
   opacity: 1;
   z-index: 0; /* 画像の下に配置 */
-  background-position: center center;
+  background-position: top center;
 }
 
 .fv__logo {
   position: absolute; /* 絶対位置に設定 */
   top: 50%; /* 縦中央 */
-  left: 75%; /* 横中央を少し左に移動（必要に応じて調整） */
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); /* センタリング */
+  left: 50%; /* 横中央を少し左に移動（必要に応じて調整） */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,6 +226,13 @@
       -ms-flex-align: center;
           align-items: center;
   width: 160px;
+}
+@media screen and (min-width:768px) {
+  .fv__logo {
+    top: 57%;
+    left: 50%;
+    width: 513px;
+  }
 }
 
 .fv__logo-1,
@@ -274,7 +287,7 @@
 }
 @media screen and (min-width:768px) {
   .about {
-    margin-top: 46px;
+    margin-top: 50px;
   }
 }
 
