@@ -1,45 +1,108 @@
 @use "sass:map";
 @use "variable";
 
+// .fv {
+//   position: relative;
+//   width: 100%;
+//   height: 600px;
+//   padding-left: 48px;
+//   overflow: hidden;
+// }
+
+// .fv__inner {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+
+//   img {
+//     width: auto;
+//     height: 100%;
+//     object-fit: cover; /* 画像の表示方法を調整 */
+//     position: absolute; /* 絶対位置に設定 */
+//     top: 0;
+//     left: 0;
+//     opacity: 0; /* 初期状態は透明 */
+//     transition: opacity 1s ease;
+
+//     &.active {
+//       opacity: 1;
+//     }
+//   }
+// }
+
+// .active {
+
+// }
+
+// .fv__logo {
+//   position: absolute; /* 絶対位置に設定 */
+//   top: 50%; /* 縦中央 */
+//   left: 50%; /* 横中央 */
+//   transform: translate(-50%, -50%);
+//   z-index: 100;
+// }
+
+// .fv__logo-1,
+// .fv__logo-2 {
+//   opacity: 0; /* 初期状態は透明 */
+//   animation: fadeIn 1s forwards; /* フェードインアニメーション */
+// }
+
+// .fv__logo-1 {
+//   animation-delay: 0.5s;
+// }
+
+// .fv__logo-2 {
+//   animation-delay: 1.5s;
+// }
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0; /* 最初は透明 */
+//     transform: translate(-50%, -30%); /* 少し上から */
+//   }
+//   100% {
+//     opacity: 1; /* 最後は表示 */
+//     transform: translate(-50%, -50%); /* センタリング */
+//   }
+// }
+
+
 .fv {
   position: relative;
   width: 100%;
-  height: 600px;
-  padding-left: 48px;
+  height: 600px; /* 必要に応じて高さを調整 */
   overflow: hidden;
+  padding-left: 48px;
 }
 
 .fv__inner {
   position: relative;
   width: 100%;
   height: 100%;
-
-  img {
-    width: auto;
-    height: 100%;
-    object-fit: cover; /* 画像の表示方法を調整 */
-    position: absolute; /* 絶対位置に設定 */
-    top: 0;
-    left: 0;
-    opacity: 0; /* 初期状態は透明 */
-    transition: opacity 1s ease;
-
-    &.active {
-      opacity: 1;
-    }
-  }
 }
 
-.active {
-
+.fv__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover; /* 背景画像のサイズをカバー */
+  transition: opacity 3s ease-in-out; /* 背景画像の切り替えを滑らかに */
+  opacity: 1;
+  z-index: 0; /* 画像の下に配置 */
 }
 
 .fv__logo {
   position: absolute; /* 絶対位置に設定 */
   top: 50%; /* 縦中央 */
-  left: 50%; /* 横中央 */
-  transform: translate(-50%, -50%);
-  z-index: 100;
+  left: 40%; /* 横中央を少し左に移動（必要に応じて調整） */
+  transform: translate(-50%, -50%); /* センタリング */
+  z-index: 10;
+  display: flex; /* 子要素を横に並べるために追加 */
+  gap: 10px; /* ロゴ間の距離を縮めるために追加 */
+  flex-direction: column;
 }
 
 .fv__logo-1,
@@ -49,11 +112,11 @@
 }
 
 .fv__logo-1 {
-  animation-delay: 0.5s; 
+  animation-delay: 0.5s; /* 0.5秒遅延 */
 }
 
 .fv__logo-2 {
-  animation-delay: 1.5s;
+  animation-delay: 1s; /* 1秒遅延 */
 }
 
 @keyframes fadeIn {
@@ -66,4 +129,3 @@
     transform: translate(-50%, -50%); /* センタリング */
   }
 }
-
