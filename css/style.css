@@ -47,7 +47,7 @@
 }
 @media screen and (min-width:768px) {
   .header__logo a img {
-    width: 262px;
+    width: 220px;
   }
 }
 
@@ -227,10 +227,27 @@
           align-items: center;
   width: 160px;
 }
+@media screen and (min-width:600px) {
+  .fv__logo {
+    top: 52%;
+    width: 290px;
+  }
+}
 @media screen and (min-width:768px) {
   .fv__logo {
+    top: 55%;
+    width: 400px;
+  }
+}
+@media screen and (min-width:900px) {
+  .fv__logo {
+    top: 56%;
+    width: 470px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .fv__logo {
     top: 57%;
-    left: 50%;
     width: 513px;
   }
 }
@@ -472,6 +489,29 @@
 
 .skill__item__image {
   width: 70px;
+}
+
+.works {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.works__heading {
+  margin-left: 37px;
+  margin-bottom: 30px;
+}
+
+.works__swiper {
+  margin: 26px 18px 0 37px;
+}
+
+.works-card__title {
+  font-size: 16px;
+}
+
+.works-card__text {
+  font-size: 10px;
+  margin-top: 8px;
 }
 
 .contact {

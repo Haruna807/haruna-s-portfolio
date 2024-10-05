@@ -15,6 +15,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="./css/recet.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -132,6 +136,78 @@
     </div>
   </section>
 
+  <section class="works">
+    <div class="works__inner">
+      <h2 class="heading works__heading">
+        Works
+      </h2>
+      <div class="works__bg"></div>
+      <div class="works__slider">
+        <!-- Slider main container -->
+        <div class="swiper works__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide works__slide">
+              <div class="works-card">
+                <div class="works-card__image">
+                  <img src="./img/works/pf-demo.png" alt="">
+                </div>
+                <div class="works-card__description">
+                  <div class="works-card__title">
+                    ポートフォリオサイト
+                  </div>
+                  <p class="works-card__text">
+                    HTML/CSS/Sass/JavaScript/<br>jQuery/Swiper/Wordpress
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide works__slide">
+              <div class="works-card">
+                <div class="works-card__image">
+                  <img src="./img/works/onomichi.png" alt="">
+                </div>
+                <div class="works-card__description">
+                  <div class="works-card__title">
+                    Snap Onomichi
+                  </div>
+                  <p class="works-card__text">
+                    HTML/CSS/Sass/JavaScript/<br>jQuery/Swiper
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide works__slide">
+              <div class="works-card">
+                <div class="works-card__image">
+                  <img src="./img/works/soboron.png" alt="">
+                </div>
+                <div class="works-card__description">
+                  <div class="works-card__title">
+                    soboron
+                  </div>
+                  <p class="works-card__text">
+                    HTML/CSS/Sass/JavaScript/<br>jQuery
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination works__pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev works__prev"></div>
+          <div class="swiper-button-next works__next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+
 
   <section class="contact">
     <div class="contact__inner">
@@ -178,6 +254,7 @@
   </main>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./js/script.js"></script>
 </body>

@@ -47,12 +47,26 @@
   align-items: center;
   width: 160px;
 
+  @include variable.mq("sm") {
+    top: 52%;
+    width: 290px;
+  }
+
   @include variable.mq("md") {
+    top: 55%;
+    width: 400px;
+  }
+
+  @include variable.mq("lg") {
+    top: 56%;
+    width: 470px;
+  }
+
+  @include variable.mq("xl") {
     top: 57%;
-    left: 50%;
     width: 513px;
   }
-  
+
 }
 
 .fv__logo-1,
