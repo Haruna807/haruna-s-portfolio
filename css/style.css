@@ -493,7 +493,7 @@
 
 .works {
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 150px;
 }
 
 .works__heading {
@@ -501,17 +501,122 @@
   margin-bottom: 30px;
 }
 
+.works__bg {
+  width: 69%;
+  padding-top: 60%;
+  position: absolute;
+  right: 0;
+  background: linear-gradient(96deg, rgba(230, 238, 207, 0.27) 0%, rgba(191, 206, 236, 0.27) 10.27%, rgba(219, 148, 214, 0.27) 83.05%, rgba(254, 245, 178, 0.27) 98.61%);
+  margin-top: 140px;
+}
+
+.works__slider {
+  margin-top: 70px;
+}
+
 .works__swiper {
-  margin: 26px 18px 0 37px;
+  padding: 26px 50px 52px 37px;
+}
+
+.works__slide {
+  margin-right: 10px;
+}
+
+.works-card {
+  width: calc(100% - 20px);
+  margin-inline: auto;
+}
+
+.works-card__image {
+  background: #dfd5e4;
+  padding-top: 14px;
+}
+
+.works-card__description {
+  margin-top: 25px;
 }
 
 .works-card__title {
   font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.68px;
 }
 
 .works-card__text {
   font-size: 10px;
   margin-top: 8px;
+  line-height: 2;
+  letter-spacing: 0.96px;
+  font-weight: 500;
+}
+
+.swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  bottom: 0;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  background: #bcbcbc;
+  opacity: 1;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #D79CF1;
+}
+
+.works__prev,
+.works__next {
+  width: 45px;
+  height: 45px;
+  background-color: #000;
+}
+.works__prev::after,
+.works__next::after {
+  display: none;
+}
+
+.works__prev {
+  display: inline-block;
+  padding: 10px;
+  left: 0 !important;
+}
+.works__prev::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+  position: absolute;
+  left: 19px;
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.works__next {
+  display: inline-block;
+  padding: 10px;
+  right: 0 !important;
+}
+.works__next::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .contact {
