@@ -1,0 +1,96 @@
+@use "sass:map";
+@use "variable";
+
+.works-page__main {
+  margin-top: variable.$header-height-sp;
+
+  @include variable.mq("md") {
+    margin-top: variable.$header-height-pc;
+  }
+}
+
+.page-heading__bg {
+  height: 100px;
+  background: linear-gradient(96deg, rgba(230, 238, 207, 0.37) 0%, rgba(191, 206, 236, 0.37) 10.27%, rgba(219, 148, 214, 0.37) 83.05%, rgba(254, 245, 178, 0.37) 98.61%);
+
+  @include  variable.mq("md") {
+    height: 200px;
+  }
+}
+
+.works-page__heading {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.works__container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-inline: auto;
+  padding-inline: 30px;
+
+  @include variable.mq("md") {
+    width: 100%;
+    max-width: 1200px;
+    padding-inline: 40px;
+  }
+}
+
+.works__items {
+  list-style: none; /* デフォルトのリストスタイルを消す */
+  padding: 0; /* パディングを消す */
+  display: flex; /* Flexboxを使用 */
+  flex-direction: column;
+
+  @include  variable.mq("md") {
+    flex-direction: row; /* 横並びに変更 */
+    flex-wrap: wrap; /* 行を折り返す */
+    align-items: stretch;
+  }
+
+}
+
+.works__item {
+  margin-bottom: 48px;
+
+  @include  variable.mq("md") {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 150px;
+    margin-right: 40px;
+    display: flex; /* 内部の要素をフレックスボックスに */
+    flex-direction: column; /* 内部の内容を縦に配置 */
+  }
+}
+
+.works__item:nth-child(2n) {
+  @include variable.mq("md") {
+    margin-right: 0; /* 3つ目のアイテムの右側の隙間を消す */
+  }
+}
+
+
+
+.works__item__description {
+  margin-top: 16px;
+  flex-shrink: 0;
+}
+
+.works__item__link {
+  text-decoration: none;
+}
+
+.works__item__image {
+  background: transparent;
+}
+
+.works__item__title {
+  line-height: 1.3;
+}
+
+
+
+.works__item__text {
+  line-height: 1.5;
+}
+

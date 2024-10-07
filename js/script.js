@@ -67,22 +67,29 @@ $(document).ready(function() {
 
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
+  loop: false, // ループを無効
+  centeredSlides: false, // 中央表示を無効
+  slidesPerView: 1.2, // 一度に表示するスライドの数
+  spaceBetween: 100, // スライド間のスペースを調整
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  // スライドの動きを調整するための設定
+  on: {
+    slideChangeTransitionEnd: function () {
+      // スライドが変更された後の処理
+      this.update(); // スライドの更新を行う
+    },
   },
 });
+
+
+
