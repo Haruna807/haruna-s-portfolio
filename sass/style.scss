@@ -7,6 +7,8 @@
 @use "contact";
 @use "footer";
 @use "works-page";
+@use "works-page-item";
+@use "works-sobolon";
 
 
 // $font-family: "Inter", system-ui;
@@ -34,6 +36,22 @@
 
 
 // 共通
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: variable.$header-height-sp;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include variable.mq("md") {
+    scroll-padding-top: variable.$header-height-pc;
+  }
+}
 
 body {
   font-family: variable.$font-family;

@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "variable";
 
-.works-page__main {
+.page__main {
   margin-top: variable.$header-height-sp;
 
   @include variable.mq("md") {
@@ -18,7 +18,7 @@
   }
 }
 
-.works-page__heading {
+.page__heading {
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -93,4 +93,7 @@
 .works__item__text {
   line-height: 1.5;
 }
+
+
+
 

@@ -67,10 +67,7 @@ $(document).ready(function() {
 
 
 const swiper = new Swiper('.swiper', {
-  loop: false, // ループを無効
-  centeredSlides: false, // 中央表示を無効
-  slidesPerView: 1.2, // 一度に表示するスライドの数
-  spaceBetween: 100, // スライド間のスペースを調整
+  loop: false,
 
   pagination: {
     el: '.swiper-pagination',
@@ -82,14 +79,46 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  // スライドの動きを調整するための設定
   on: {
-    slideChangeTransitionEnd: function () {
-      // スライドが変更された後の処理
-      this.update(); // スライドの更新を行う
+    init: function () {
+      const swiperWrapper = this.wrapperEl;
+      swiperWrapper.style.transform = `translate3d(0, 0, 0)`;
+      swiperWrapper.style.transitionDuration = '0ms'; // 初期アニメーション無効
+    },
+
+    slideChangeTransitionStart: function () {
+      const swiperWrapper = this.wrapperEl;
+      const slides = this.slides;
+      const slideWidth = slides[0].offsetWidth; // スライドの幅を取得
+      const currentIndex = this.activeIndex;
+
+      // 通常のスライドの移動
+      swiperWrapper.style.transitionDuration = '300ms'; // 通常のアニメーション
+      swiperWrapper.style.transform = `translate3d(-${slideWidth * currentIndex}px, 0, 0)`; // 計算したオフセット
+    },
+  },
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 1.5,
+      spaceBetween: 100,
+      centeredSlides: false,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 100,
+      centeredSlides: true,
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 100,
+      centeredSlides: true,
     },
   },
 });
+
+
+
 
 
 

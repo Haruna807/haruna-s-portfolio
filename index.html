@@ -31,7 +31,7 @@
         <a href="/"><img src="./img/header-logo.png" alt="Haruna"></a>
       </h1>
       <nav class="header__nav">
-        <a href="#about" class="header__link">About</a>
+        <a href="about.html" class="header__link">About</a>
         <a href="works.html" class="header__link">Works</a>
         <a href="#contact" class="header__link">Contact</a>
       </nav>
@@ -45,7 +45,7 @@
 
   <div id="js-drawer-content" class="drawer__content">
     <nav class="drawer__content-menu">
-      <a href="#about" class="drawer__content-link">About</a>
+      <a href="about.html" class="drawer__content-link">About</a>
       <a href="works.html" class="drawer__content-link">Works</a>
       <a href="#contact" class="drawer__content-link">Contact</a>
     </nav>
@@ -68,7 +68,7 @@
       </div>
     </div>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="about__inner">
       <div class="about__image__wrap">
         <div class="about__image">
@@ -85,10 +85,11 @@
             <div class="about__name__en">Kanpuu Haruna</div>
           </div>
           <p class="about__text">
+            ポートフォリオをご覧いただきありがとうございます。<br>
             大学卒業後、工作機械メーカーに事務職として就職し生産管理の仕事をしています。<br>『作ること』の面白さに魅力を感じ、お客様の想いを形にし、お届けするWeb制作のお仕事に興味を持ちました。<br>様々なことに挑戦しスキルを磨き、自分自身の成長を通じて、お客様のニーズに応えるWeb制作を実現できる能力を身につけていきたいと考えています。
           </p>
           <div class="about__button">
-            <a href="#" class="button">more</a>
+            <a href="about.html" class="button">more</a>
           </div>
         </div>
       </div>
@@ -136,7 +137,7 @@
     </div>
   </section>
 
-  <section class="works">
+  <section class="works" id="works">
     <div class="works__inner">
       <h2 class="heading works__heading">
         Works
@@ -148,10 +149,11 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper works-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide works__slide">
-              <div class="works-card">
+            <div class="swiper-slide works-slide">
+              <div class="works__slide">
+              <a href="works-pf.html" class="works-card">
                 <div class="works-card__image">
-                  <img src="./img/works/pf-demo.png" alt="">
+                  <img src="./img/works/pf.png" alt="">
                 </div>
                 <div class="works-card__description">
                   <div class="works-card__title">
@@ -161,10 +163,12 @@
                     HTML/CSS/Sass/JavaScript/<br>jQuery/Swiper/Wordpress
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="swiper-slide works__slide">
-              <div class="works-card">
+            </div>
+            <div class="swiper-slide works-slide">
+              <div class="works__slide">
+              <a href="works-onomichi.html" class="works-card">
                 <div class="works-card__image">
                   <img src="./img/works/onomichi.png" alt="">
                 </div>
@@ -176,12 +180,14 @@
                     HTML/CSS/Sass/JavaScript/<br>jQuery/Swiper
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="swiper-slide works__slide">
-              <div class="works-card">
+            </div>
+            <div class="swiper-slide works-slide">
+              <div class="works__slide">
+              <a href="works-sobolon.html" class="works-card">
                 <div class="works-card__image">
-                  <img src="./img/works/soboron.png" alt="">
+                  <img src="./img/works/sobolon.png" alt="">
                 </div>
                 <div class="works-card__description">
                   <div class="works-card__title">
@@ -192,6 +198,7 @@
                   </p>
                 </div>
               </div>
+              </a>
             </div>
           </div>
           <!-- If we need pagination -->
@@ -212,7 +219,7 @@
 
 
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="contact__inner">
       <h2 class="heading contact__heading">
         Contact
@@ -223,7 +230,7 @@
             <img src="./img/contact/mail_icon.png" alt="">
           </div>
           <p class="contact__mail__link">
-            メールアドレスを入れる<!-- k.haruna1145@gmail.com -->
+            k.haruna1145@gmail.com
           </p>
         </a>
         <a href="https://x.com/
