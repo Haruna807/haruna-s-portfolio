@@ -4,12 +4,11 @@
 .works3__highlight__content {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 }
 
-.works3__hover__image {
-  padding: 30px;
-  background: linear-gradient(96deg, rgba(230, 238, 207, 0.28) 0%, rgba(191, 206, 236, 0.31) 0.01%, rgba(216, 153, 216, 0.27) 96.62%, rgba(219, 148, 214, 0.26) 96.63%);
+.works3__hover__image_1 {
+  padding: 30px 40px;
 }
 
 .works3__hover__image1 {
@@ -28,6 +27,10 @@
 
 .works3__hover__image1-2 {
   width: 200px;
+}
+
+.works3__hover__text {
+  line-height: 2.4;
 }
 
 .works3__hover__image2 {
@@ -96,6 +99,27 @@
 .works3__hover__image5-2 {
   width: 210px;
 }
+
+.works3__highlight__image__hover {
+  @include variable.mq("md") {
+    width: 560px;
+  }
+}
+
+.works3__focus__image {
+  @include variable.mq("md") {
+    width: 500px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.works3__focus__text {
+
+}
+
 
 
 

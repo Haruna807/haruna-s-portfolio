@@ -3,7 +3,7 @@
 
 .works {
   margin-top: 70px;
-  margin-bottom: 150px;
+  margin-bottom: 160px;
 }
 
 .works__inner {
@@ -22,11 +22,11 @@
 
 .works__bg {
   width: 69%;
-  padding-top: 60%;
+  padding-top: 39%;
   position: absolute;
   right: 0;
   background: linear-gradient(96deg, rgba(230, 238, 207, 0.27) 0%, rgba(191, 206, 236, 0.27) 10.27%, rgba(219, 148, 214, 0.27) 83.05%, rgba(254, 245, 178, 0.27) 98.61%);
-  margin-top: 140px;
+  margin-top: 200px;
 }
 
 .works__slider {
@@ -44,7 +44,7 @@
   padding-bottom: 40px;
 
   @include variable.mq("md") {
-    padding: 26px 40px 52px 40px;
+    padding: 26px 40px 72px 40px;
     width: 100%;
   }
   
@@ -88,12 +88,9 @@
 }
 
 .works__slide {
-  // width: calc(100% - 100px) !important;
   margin-inline: 50px;
 
   @include variable.mq("lg") {
-    // width: calc(100% - 300px) !important;
-    // width: calc(100% - 300px) !important; /* スライド幅を調整 */
     margin-right: 100px;
   }
 }
@@ -168,12 +165,12 @@
 .swiper-pagination {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 17px;
   bottom: 0;
 
   .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     margin-left: 0 !important;
     margin-right: 0 !important;
     background: #bcbcbc;
@@ -291,6 +288,6 @@
   margin-top: 60px;
 
   @include variable.mq("md") {
-    margin-top: 200px;
+    margin-top: 100px;
   }
 }
