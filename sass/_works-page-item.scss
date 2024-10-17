@@ -57,9 +57,10 @@
   display: flex;
 
   @include variable.mq("md") {
-    width: 603px;
-    margin-inline: auto;
+    width: 679px;
+    margin-right: auto;
     margin-top: 43px;
+    margin-left: 450px;
   }
 }
 
@@ -71,7 +72,7 @@
 
   @include variable.mq("md") {
     font-size: 18px;
-    width: 219px;
+    width: 180px;
   }
 }
 
@@ -85,6 +86,7 @@
     font-size: 18px;
   }
 }
+
 
 .works-page__message {
   margin-top: 60px;
@@ -215,6 +217,12 @@
   display: flex;
 }
 
+.works__highlight__content-item-2 {
+  @include variable.mq("md") {
+    margin-top: 40px;
+  }
+}
+
 .works__highlight__content-item__title {
   width: 200px;
   font-size: 17px;
@@ -228,6 +236,11 @@
 .works__highlight__image {
   padding: 30px;
   background: linear-gradient(96deg, rgba(230, 238, 207, 0.28) 0%, rgba(191, 206, 236, 0.31) 0.01%, rgba(216, 153, 216, 0.27) 96.62%, rgba(219, 148, 214, 0.26) 96.63%);
+}
+
+.works__responsive__text {
+  line-height: 1.8;
+  margin-left: 80px;
 }
 
 

@@ -100,13 +100,13 @@
   width: 210px;
 }
 
-.works3__highlight__image__hover {
+.works3__highlight__image__form {
   @include variable.mq("md") {
     width: 560px;
   }
 }
 
-.works3__focus__image {
+.works3__form__image {
   @include variable.mq("md") {
     width: 500px;
   }
@@ -116,9 +116,47 @@
   }
 }
 
-.works3__focus__text {
+.works3__form__text {
+  line-height: 2.0;
+}
+
+.works3__form__text-1 {
 
 }
+
+.works3__form__text-2 {
+  margin-top: 40px;
+}
+
+
+.works3__highlight__image__drawer {
+
+}
+
+.works3__drawer__image {
+  @include variable.mq("md") {
+    width: 400px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.works3__drawer__text {
+  line-height: 2.0;
+}
+
+.works3__drawer__text-1 {
+
+}
+
+.works3__drawer__text-2 {
+  margin-top: 30px;
+}
+
+
+
 
 
 
