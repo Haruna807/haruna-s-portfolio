@@ -1,0 +1,59 @@
+@use "sass:map";
+@use "variable";
+
+
+.works5__highlight__content {
+  display: flex;
+
+  @include variable.mq("md") {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+.works5__highlight__image__modal {
+  width: 560px;
+}
+
+.works5__modal__image {
+  width: 500px;
+}
+
+.works5__modal__text {
+  line-height: 2;
+  display: flex;
+  align-items: center;
+}
+
+.works5__modal__text-1 {
+  
+}
+
+.works5__highlight__image__hover {
+  width: 560px;
+}
+
+.works5__hover__image1 {
+
+}
+
+.works5__hover__image2 {
+  margin-top: 30px;
+}
+
+.works5__hover__image3 {
+  margin-top: 30px;
+}
+
+.works5__hover__text {
+  line-height: 2.0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.works5__hover__text-2 {
+}
+
+

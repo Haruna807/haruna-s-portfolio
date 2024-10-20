@@ -87,6 +87,10 @@
   }
 }
 
+.info-item__text-c {
+  margin-left: 75px;
+}
+
 
 .works-page__message {
   margin-top: 60px;
@@ -162,7 +166,7 @@
   letter-spacing: 1.6px;
 
   @include variable.mq("md") {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
@@ -244,17 +248,30 @@
 }
 
 
+.site__image-bg {
+  background: rgba(239, 218, 242, 0.48);
+  width: 1140px;
+  margin: 130px auto;
+  padding: 60px;
+}
+
+.site__image-text {
+  font-size: 10px;
+  margin-bottom: 8px;
+  margin-left: 20px;
+}
 
 .site__image {
   margin-inline: auto;
+  aspect-ratio: 3 / 2;
+  border: 1px solid #bebebe;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, .1), 0 2px 12px rgba(0, 0, 0, .1);
+  overflow-y: scroll;
+  scrollbar-width: none;
 
-  @include variable.mq("md") {
-    margin-top: 180px;
-    margin-bottom: 140px;
-    width: 940px;
-    padding: 60px 70px;
-    background: rgba(239, 218, 242, 0.48);
   }
-}
+
+
+
 
 

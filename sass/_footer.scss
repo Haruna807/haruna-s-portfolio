@@ -16,13 +16,38 @@
   }
 }
 
+.footer__link {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+
+  @include variable.mq("md") {
+    gap: 50px;
+  }
+}
+
+.footer__mail {
+
+}
+
+.footer__mail__icon {
+  width: 29px;
+  margin-bottom: 8px;
+
+  @include variable.mq("md") {
+    width: 39px;
+    margin-bottom: 14px;
+  }
+}
+
+
+
 .footer__x {
 
 }
 
 .footer__x__icon {
   width: 30px;
-  margin-inline: auto;
   margin-bottom: 8px;
 
   @include variable.mq("md") {

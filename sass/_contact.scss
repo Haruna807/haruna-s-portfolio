@@ -6,12 +6,24 @@
 
 }
 
+.contact-page {
+  background: #fff;
+}
+
 .contact__inner {
   padding-top: 70px;
   padding-bottom: 70px;
 
   @include variable.mq("md") {
     padding-bottom: 100px;
+  }
+}
+
+.contact__text {
+  text-align: center;
+
+  @include variable.mq("md") {
+    margin-bottom: 60px;
   }
 }
 
