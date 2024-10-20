@@ -1,0 +1,331 @@
+@use "sass:map";
+@use "variable";
+
+
+
+.works2__highlight__content {
+  display: flex;
+
+  @include variable.mq("md") {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+.works2__slider__image_1 {
+
+  @include variable.mq("md") {
+    width: 560px;
+    padding: 20px;
+  }
+}
+
+.works2__slider__image-1 {
+
+}
+
+.works2__slider__text-1 {
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.works2__highlight__content-2 {
+
+}
+
+.works2__slider__image_2 {
+  @include variable.mq("md") {
+    width: 560px;
+    padding: 15px;
+  }
+}
+
+.works2__slider__image-2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.works2__slider__image-2-1 {
+
+}
+
+.works2__slider__image-2-2 {
+
+}
+
+.works2__slider__text-2 {
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.works2__highlight__image__drawer {
+
+}
+
+.works2__drawer__image {
+
+}
+
+.works2__drawer__text {
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.works2__drawer-text {
+
+}
+
+.works2__highlight__image__qa {
+  
+  @include variable.mq("md") {
+    width: 560px;
+    padding: 20px;
+  }
+}
+
+.works2__qa__image {
+
+}
+
+.works2__qa__text {
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.works2__qa-text {
+
+}
+
+.works2__highlight__image__modal {
+
+  @include variable.mq("md") {
+    width: 560px;
+    padding: 20px;
+  }
+}
+
+.works2__modal__image {
+
+}
+
+.works2__modal__text {
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.works2__modal__text-1 {
+
+}
+
+.works2__form__image {
+  display: flex;
+  flex-direction: row;
+
+  @include variable.mq("md") {
+    width: 650px;
+    padding: 20px;
+  }
+}
+
+.works2__form__image-1 {
+
+  @include variable.mq("md") {
+    width: 250px;
+  }
+}
+
+.works2__arrow {
+
+}
+
+.works2__arrow-1 {
+  margin-inline: 10px;
+  top: 50%;
+}
+
+.works2__form__image-2 {
+  @include variable.mq("md") {
+    width: 250px;
+  }
+}
+
+.works2__form__text {
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.works2__form__text-1 {
+
+}
+
+.works2__form__text-2 {
+  margin-top: 20px;
+}
+
+.works2__hover__image_1 {
+
+  @include variable.mq("md") {
+    width: 650px;
+    padding: 20px;
+  }
+}
+
+.works2__hover__image1 {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.works2__hover__image1-1 {
+  width: 255px;
+}
+
+.works2__arrow-2 {
+  margin-inline: 10px;
+  top: 56px;
+}
+
+.works2__hover__image1-2 {
+  width: 255px;
+}
+
+.works2__hover__text {
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.works2__hover__image3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.works2__hover__image3-1 {
+  width: 250px;
+}
+
+.works2__arrow-3 {
+  margin: 10px;
+  top: 19px;
+}
+
+.works2__hover__image3-2 {
+  width: 250px;
+}
+
+.works2__hover__image4 {
+  margin-top: 20px;
+}
+
+.works2__hover__image5 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.works2__hover__image5-1 {
+  width: 250px;
+}
+
+.works2__arrow-5 {
+  margin-inline: 10px;
+  top: 8px;
+}
+
+.works2__hover__image5-2 {
+  width: 250px;
+}
+
+.works2__highlight__content-3 {
+  @include variable.mq("md") {
+    flex-direction: column;
+  }
+}
+
+.works__responsive__text {
+
+}
+
+.works__responsive__fv {
+
+  @include variable.mq("md") {
+    margin-left: 80px;
+  }
+  
+}
+
+.works__responsive__fv__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.works__responsive__fv__image {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.works__responsive__fv__image1 {
+
+}
+
+.works__responsive__fv__image-text {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 7px;
+}
+
+.works__responsive__fv__image2 {
+
+}
+
+.works__responsive__fv__image3 {
+
+}
+
+.works__responsive__fv__image4 {
+ 
+}
+
+.works__highlight-content {
+
+}
+
+.works__highlight__content-item {
+
+}
+
+.works__highlight__content-item__title {
+
+}
+
+.works__highlight__content-item__text {
+
+}
+
+.works__highlight__content-item-2 {
+
+}
+
+.works__highlight__content-item__image {
+  position: relative;
+
+  @include variable.mq("md") {
+    width: 600px;
+    left: 20%;
+    margin-top: 30px;
+  }
+  
+}
+
+
+
