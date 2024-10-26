@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .header {
   height: 48px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   top: 0;
   left: 0;
   width: 100%;
@@ -191,19 +191,107 @@
 }
 
 .fv__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover; /* 背景画像のサイズをカバー */
-  -webkit-transition: opacity 3s ease-in-out;
-  transition: opacity 3s ease-in-out; /* 背景画像の切り替えを滑らかに */
-  opacity: 1;
-  z-index: 0; /* 画像の下に配置 */
-  background-position: top center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
+.fv__img.fv__img1 {
+  background-image: url(../img/fv/fv_img-1.png);
+}
+.fv__img.fv__img2 {
+  background-image: url(../img/fv/sp/fv_img-2-sp.png);
+}
+.fv__img.fv__img3 {
+  background-image: url(../img/fv/fv_img-3.png);
+}
+.fv__img.fv__img4 {
+  background-image: url(../img/fv/fv_img-4.png);
+}
+@media screen and (min-width:768px) {
+  .fv__img.fv__img2 {
+    background-image: url(../img/fv/fv_img-2.png);
+  }
+}
+
+.fv__img {
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: anime 24s 0s infinite;
+  animation: anime 24s 0s infinite;
+}
+
+.fv__img:nth-of-type(2) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.fv__img:nth-of-type(3) {
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+.fv__img:nth-of-type(4) {
+  -webkit-animation-delay: 18s;
+  animation-delay: 18s;
+}
+
+@-webkit-keyframes anime {
+  0% {
+    opacity: 0.3;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.2;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    z-index: 9;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0.3;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.2;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    z-index: 9;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .fv__logo {
   position: absolute; /* 絶対位置に設定 */
   top: 50%; /* 縦中央 */
