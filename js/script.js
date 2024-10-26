@@ -66,8 +66,13 @@ $(document).ready(function() {
 });
 
 
-const swiper = new Swiper('.swiper', {
+// スライダー
+
+var mySwiper = new Swiper('.swiper', {
   loop: false,
+  slidesPerView: 2,
+  spaceBetween: 10,
+  centeredSlides: true,
 
   pagination: {
     el: '.swiper-pagination',
@@ -79,43 +84,16 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  on: {
-    init: function () {
-      const swiperWrapper = this.wrapperEl;
-      swiperWrapper.style.transform = `translate3d(0, 0, 0)`;
-      swiperWrapper.style.transitionDuration = '0ms'; // 初期アニメーション無効
-    },
-
-    slideChangeTransitionStart: function () {
-      const swiperWrapper = this.wrapperEl;
-      const slides = this.slides;
-      const slideWidth = slides[0].offsetWidth; // スライドの幅を取得
-      const currentIndex = this.activeIndex;
-
-      // 通常のスライドの移動
-      swiperWrapper.style.transitionDuration = '300ms'; // 通常のアニメーション
-      swiperWrapper.style.transform = `translate3d(-${slideWidth * currentIndex}px, 0, 0)`; // 計算したオフセット
-    },
-  },
-
   breakpoints: {
-    1024: {
-      slidesPerView: 1.5,
-      spaceBetween: 100,
-      centeredSlides: false,
-    },
-    768: {
+    767: {
       slidesPerView: 1,
-      spaceBetween: 100,
-      centeredSlides: true,
-    },
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 100,
-      centeredSlides: true,
+      spaceBetween: 0,
     },
   },
 });
+
+
+
 
 
 
