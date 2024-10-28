@@ -180,16 +180,18 @@
 }
 
 .works__highlight__title {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 1.92px;
-  padding:1px 24px;
+  padding:0 9px;
   background: transparent;
-  border-left: solid 20px #C7C4E8;
+  border-left: solid 10px #C7C4E8;
 
   @include variable.mq("md") {
     font-size: 20px;
+    border-left: solid 20px #C7C4E8;
+    padding:1px 24px;
   }
 }
 

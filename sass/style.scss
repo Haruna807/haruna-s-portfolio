@@ -51,6 +51,20 @@ body {
   }
 }
 
+.hidden-pc {
+
+  @include variable.mq("md") {
+    display: none;
+  }
+}
+
+.hidden-sp {
+  display: none;
+  @include variable.mq("md") {
+    display: block;
+  }
+}
+
 // ボタン
 
 .button {
