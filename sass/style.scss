@@ -65,6 +65,18 @@ body {
   }
 }
 
+.hidden-sp-pc {
+  display: none;
+
+  @include variable.mq("md") {
+    display: block;
+  }
+
+  @include variable.mq("xl") {
+    display: none;
+  }
+}
+
 // ボタン
 
 .button {

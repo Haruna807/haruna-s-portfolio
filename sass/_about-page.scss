@@ -40,8 +40,15 @@
   }
 
   @include variable.mq("lg") {
-    margin-left: 125px;
+    gap: 106px;
+    margin-left: 130px;
+    justify-content: flex-start;
+  }
+
+  @include variable.mq("xl") {
     gap: 171px;
+    margin-left: 130px;
+    justify-content: flex-start;
   }
 }
 
@@ -49,10 +56,12 @@
   width: 220px;
   left: 50%;
   transform: translateX(-50%);
+  position: relative;
 
   @include variable.mq("md") {
     transform: translateX(0);
     width: 240px;
+    position: static;
   }
 
 }
@@ -132,8 +141,12 @@
 
   @include variable.mq("md") {
     flex-direction: row;
-    margin-left: 100px;
-    gap: 55px;
+    margin-left: 30px;
+    gap: 25px;
+  }
+
+  @include variable.mq("xl") {
+    margin-left: 120px;
   }
 }
 
@@ -150,9 +163,14 @@
   letter-spacing: 1.92px;
 
   @include variable.mq("md") {
-    margin-top: auto;
-    font-size: 22px;
+    margin-top: 5px;
+    font-size: 20px;
     line-height: 30px;
+    width: 120px;
+  }
+
+  @include variable.mq("lg") {
+
   }
 }
 
@@ -179,8 +197,9 @@
 
   @include variable.mq("md") {
     margin-top: 8px;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 22px;
+    line-height: 1.5;
   }
 }
 
@@ -237,6 +256,16 @@
 
   @include variable.mq("md") {
     margin-top: 145px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  @include variable.mq("lg") {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  @include variable.mq("xl") {
     margin-left: 185px;
     margin-right: 117px;
   }
@@ -273,6 +302,14 @@
 
   @include variable.mq("md") {
     width: 331px;
+    height: 270px;
+  }
+
+  @include variable.mq("lg") {
+    height: 270px;
+  }
+
+  @include variable.mq("xl") {
     height: 257px;
   }
 }
@@ -287,6 +324,11 @@
   }
 
   @include variable.mq("md") {
+    margin-top: 30px;
+    margin-inline: 20px;
+  }
+
+  @include variable.mq("xl") {
     margin-top: 48px;
     margin-inline: 50px;
   }
@@ -302,6 +344,14 @@
   text-align: center;
 
   @include variable.mq("md") {
+    font-size: 16px;
+  }
+
+  @include variable.mq("lg") {
+    font-size: 17px;
+  }
+
+  @include variable.mq("xl") {
     font-size: 18px;
   }
 }
@@ -313,7 +363,7 @@
   line-height: 1.6;
 
   @include variable.mq("md") {
-    line-height: 21px;
+    
   }
 
 }
@@ -324,6 +374,16 @@
 
   @include variable.mq("md") {
     margin-top: 145px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  @include variable.mq("lg") {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  @include variable.mq("xl") {
     margin-left: 185px;
     margin-right: 117px;
   }
@@ -347,6 +407,10 @@
   border: 1px solid #000;
 
   @include variable.mq("md") {
+    width: 600px;
+  }
+
+  @include variable.mq("lg") {
     width: 775px;
   }
 }
@@ -382,11 +446,15 @@
   margin-right: 30px;
 
   @include variable.mq("md") {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 36px;
     margin-bottom: 36px;
     margin-left: 108px;
     margin-right: 45px;
+  }
+
+  @include variable.mq("lg") {
+    font-size: 16px;
   }
 }
   
@@ -417,9 +485,19 @@
 
   @include variable.mq("md") {
     margin-top: 145px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 170px;
+  }
+
+  @include variable.mq("lg") {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  @include variable.mq("xl") {
     margin-left: 185px;
     margin-right: 117px;
-    margin-bottom: 170px;
   }
 }
 
@@ -448,7 +526,16 @@
   }
 
   @include variable.mq("md") {
+    flex: 0 0 calc(50% - 50px);
+    margin: 20px;
+  }
+
+  @include variable.mq("lg") {
     flex: 0 0 calc(50% - 100px);
+    margin: 20px;
+  }
+
+  @include variable.mq("xl") {
     margin: 40px;
   }
 
@@ -511,9 +598,14 @@
   }
 
   @include variable.mq("md") {
-    font-size:		16px;
-	  padding-top:		120px;
+    font-size:		13px;
+	  padding-top:		25px;
 	  padding-left:		0px;
+  }
+
+  @include variable.mq("lg") {
+    font-size:		16px;
+    padding-top:		120px;
   }
 }
 
