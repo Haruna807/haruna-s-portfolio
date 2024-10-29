@@ -15,6 +15,10 @@
 
   @include variable.mq("md") {
     flex-direction: row;
+    gap: 80px;
+  }
+
+  @include variable.mq("lg") {
     gap: 121px;
   }
 }
@@ -22,11 +26,15 @@
 .about__image__wrap {
   @include variable.mq("md") {
     width: 648px !important;
-    height: 520px;
+    height: 440px;
     background: linear-gradient(96deg, rgba(230, 238, 207, 0.28) 0%, rgba(191, 206, 236, 0.31) 0.01%, rgba(216, 153, 216, 0.27) 96.62%, rgba(219, 148, 214, 0.26) 96.63%);
     display: flex;
     align-items: center;
 
+  }
+
+  @include variable.mq("lg") {
+    height: 520px;
   }
 }
 
@@ -34,8 +42,8 @@
   text-align: center;
 
   @include variable.mq("md") {
-    width: 400px;
-    height: 400px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
     background-color: #fff;
     display: flex;
@@ -44,10 +52,20 @@
     margin-inline: auto;
   }
 
+  @include variable.mq("lg") {
+    width: 400px;
+    height: 400px;
+  }
+
   img {
     width: 180px;
 
     @include variable.mq("md") {
+      width: 200px;
+      height: 200px;
+    }
+
+    @include variable.mq("lg") {
       width: 300px;
       height: 300px;
     }
@@ -114,8 +132,13 @@
   line-height: 1.5;
   letter-spacing: 1.2px;
 
+
   @include variable.mq("md") {
     font-size: 15px;
+    line-height: 1.5;
+  }
+
+  @include variable.mq("lg") {
     line-height: 1.9;
   }
 }
@@ -126,18 +149,34 @@
 
 .about__text-2 {
   margin-top: 7px;
+
+  @include variable.mq("sm") {
+    margin-top: 15px;
+  }
 }
 
 .about__text-3 {
   margin-top: 7px;
+
+  @include variable.mq("sm") {
+    margin-top: 15px;
+  }
 }
 
 .about__text-4 {
   margin-top: 7px;
+
+  @include variable.mq("sm") {
+    margin-top: 15px;
+  }
 }
 
 .about__button {
   margin-top: 27px;
+
+  @include variable.mq("md") {
+    margin-top: 40px;
+  }
 }
 
 .about__skill {
@@ -145,9 +184,13 @@
   background: #F1E8F654;
 
   @include variable.mq("md") {
-    width: 800px;
+    width: 700px;
     margin-left: auto;
     margin-right: 0;
+  }
+
+  @include variable.mq("lg") {
+    width: 800px;
   }
 }
 

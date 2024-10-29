@@ -8,9 +8,14 @@
 
   @include variable.mq("md") {
     margin-top: 145px;
-    margin-left: 185px;
+    margin-left: 100px;
     margin-right: 117px;
   }
+
+  @include variable.mq("lg") {
+    margin-left: 185px;
+  }
+
 }
 
 .works__highlight__title {
@@ -28,14 +33,27 @@
   @include variable.mq("md") {
     flex-direction: row;
     margin-top: 76px;
-    gap: 171px;
+    gap: 100px;
+    margin-left: 0;
+    justify-content: center;
+    text-align: left;
+  }
+
+  @include variable.mq("lg") {
     margin-left: 125px;
+    gap: 171px;
   }
 }
 
 .profile__info__image {
   width: 220px;
-  margin-inline: auto;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include variable.mq("md") {
+    transform: translateX(0);
+    width: 240px;
+  }
 
 }
 
@@ -43,6 +61,12 @@
   text-align: center;
 
   @include variable.mq("md") {
+    margin-top: 16px;
+    justify-content: center;
+    text-align: left;
+  }
+
+  @include variable.mq("lg") {
     margin-top: 38px;
   }
 }
@@ -454,6 +478,10 @@
 
 .favorite__item__name {
   font-size: 13px;
+
+  @include variable.mq("sm") {
+    font-size: 15px;
+  }
 }
 
 .favorite__item__image {
@@ -476,6 +504,11 @@
 	padding-top:		30px;
 	padding-left:		0px;
   padding-right: 30px;
+
+  @include variable.mq("sm") {
+    padding-top: 75px;
+    padding-left: 36px;
+  }
 
   @include variable.mq("md") {
     font-size:		16px;

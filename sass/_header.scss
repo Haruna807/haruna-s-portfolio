@@ -148,13 +148,17 @@
   color: #fff;
   position: relative;
 
+  @include variable.mq("sm") {
+    font-size: 16px;
+  }
+
   &::before {
     content: "";
     border-top: 1px solid #fff;
     width: 13px;
     height: 1px;
     position: absolute;
-    left: 97px;
+    left: calc(50% - 68px);
     top: 50%;
     transform: translateY(-50%);
   }

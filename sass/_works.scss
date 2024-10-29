@@ -6,6 +6,10 @@
   margin-bottom: 100px;
 
   @include variable.mq("md") {
+    padding-bottom: 60px;
+  }
+
+  @include variable.mq("xl") {
     padding-bottom: 160px;
   }
 }
@@ -26,11 +30,15 @@
 
 .works__bg {
   width: 69%;
-  padding-top: 39%;
+  padding-top: 50%;
   position: absolute;
   right: 0;
   background: linear-gradient(96deg, rgba(230, 238, 207, 0.27) 0%, rgba(191, 206, 236, 0.27) 10.27%, rgba(219, 148, 214, 0.27) 83.05%, rgba(254, 245, 178, 0.27) 98.61%);
   margin-top: 200px;
+
+  @include variable.mq("xl") {
+    padding-top: 39%;
+  }
 }
 
 .works__slider {
@@ -96,8 +104,12 @@
   margin-inline: auto;
 
   @include variable.mq("lg") {
-    width: calc(100% - 500px);
+    width: calc(100% - 200px);
     margin-inline: auto;
+  }
+
+  @include variable.mq("xl") {
+    width: calc(100% - 500px);
   }
 }
 
