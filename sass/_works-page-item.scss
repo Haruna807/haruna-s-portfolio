@@ -2,6 +2,7 @@
 @use "variable";
 
 .works-page__inner {
+  margin-top: 100px;
 
   @include variable.mq("md") {
     margin-top: 195px;
@@ -11,6 +12,11 @@
 .works-page__image {
   display: flex;
   justify-content: center;
+  margin-inline: 20px;
+
+  @include variable.mq("sm"){
+    margin-inline: 40px;
+  }
 
   img {
 
@@ -25,21 +31,27 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 1.6;
-  letter-spacing: 4.0px;
   text-align: center;
+  letter-spacing: 1.5px;
 
   @include variable.mq("md") {
     font-size: 36px;
     margin-top: 49px;
+    letter-spacing: 4.0px;
   }
 }
 
 .works-page__text {
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 1.6px;
+  letter-spacing: 0.2px;
   text-align: center;
+  margin-top: 7px;
+
+  @include variable.mq("sm") {
+    font-size: 15px;
+  }
 
   @include variable.mq("md") {
     font-size: 17px;
@@ -48,6 +60,9 @@
 }
 
 .works-info__items {
+  margin-top: 30px;
+  margin-left: 25px;
+
   @include variable.mq("md") {
     margin-top: 50px;
   }
@@ -55,32 +70,43 @@
 
 .works-info__item {
   display: flex;
+  flex-direction: column;
 
   @include variable.mq("md") {
     width: 679px;
     margin-right: auto;
     margin-top: 43px;
     margin-left: 450px;
+    flex-direction: row;
   }
+}
+
+.works-info__item:not(:first-child) {
+  margin-top: 40px;
 }
 
 .info-item__title {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.6;
   letter-spacing: 1.6px;
 
   @include variable.mq("md") {
     font-size: 18px;
     width: 180px;
+    font-weight: 500;
   }
 }
 
 .info-item__text {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 1.6px;
+  letter-spacing: 0.7px;
+
+  @include variable.mq("sm") {
+    font-size: 16px;
+  }
 
   @include variable.mq("md") {
     font-size: 18px;
@@ -91,10 +117,20 @@
   margin-left: 75px;
 }
 
+.info-item__text-o {
+  font-size: 11px;
+}
+
 
 .works-page__message {
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    margin-top: 60px;
+    font-size: 16px;
+  }
 }
 
 .works-page__message__text {
@@ -112,6 +148,7 @@
 .works-page__button {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 
   @include variable.mq("md") {
     margin-top: 45px;
@@ -121,6 +158,7 @@
 
 .works-page__description__wrapper {
   background: rgba(241, 232, 246, 0.40);
+  margin-top: 50px;
 
   
   @include variable.mq("md") {
@@ -134,14 +172,24 @@
 }
 
 .works-page__description {
+  padding: 20px 35px;
 
+  @include variable.mq("md") {
+    padding: 0;
+  }
 }
 
 .works__description-item {
   display: flex;
+  flex-direction: column;
+
+  @include variable.mq("md") {
+    flex-direction: row;
+}
 }
 
 .works__description-item:not(:first-child) {
+  margin-top: 20px;
 
   @include variable.mq("md") {
       margin-top: 66px;
@@ -149,29 +197,37 @@
 }
 
 .works__description-item__title {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 1.92px;
 
   @include variable.mq("md") {
+    font-size: 17px;
     font-size: 20px;
     width: 229px;
   }
 }
 
 .works__description-item__text {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 1.6px;
+  letter-spacing: 0.5px;
+
+  @include variable.mq("sm") {
+    font-size: 16px;
+  }
 
   @include variable.mq("md") {
     font-size: 17px;
+    letter-spacing: 1.6px;
   }
 }
 
 .works__highlight {
+  margin-top: 80px;
+  margin-inline: 30px;
 
   @include variable.mq("md") {
     margin-inline: 170px;
@@ -217,11 +273,28 @@
 
 .works__highlight-content {
   margin-top: 50px;
-  margin-left: 60px;
+  margin-left: 0;
+
+  @include variable.mq("md") {
+    margin-left: 60px;
+  }
 }
 
 .works__highlight__content-item {
   display: flex;
+  flex-direction: column;
+
+  @include variable.mq("md") {
+    flex-direction: row;
+  }
+}
+
+.works__highlight__content-item:not(:first-child) {
+  margin-top: 30px;
+
+  @include variable.mq("md") {
+    margin-top: 0;
+  }
 }
 
 .works__highlight__content-item-2 {
@@ -237,12 +310,20 @@
 }
 
 .works__highlight__content-item__text {
-  font-size: 15px;
+  font-size: 12px;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works__highlight__image {
-  padding: 30px;
+  padding: 10px;
   background: linear-gradient(96deg, rgba(230, 238, 207, 0.28) 0%, rgba(191, 206, 236, 0.31) 0.01%, rgba(216, 153, 216, 0.27) 96.62%, rgba(219, 148, 214, 0.26) 96.63%);
+
+  @include variable.mq("md") {
+    padding: 30px;
+  }
 }
 
 .works__responsive__text {
@@ -253,9 +334,16 @@
 
 .site__image-bg {
   background: rgba(239, 218, 242, 0.48);
-  width: 1140px;
+  width: 100%;
   margin: 130px auto;
-  padding: 60px;
+  padding: 60px 20px;
+  margin-bottom: 80px;
+
+  @include variable.mq("md") {
+    width: 1140px;
+    padding: 60px;
+    margin-bottom: 130px;
+  }
 }
 
 .site__image-text {

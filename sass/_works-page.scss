@@ -53,6 +53,7 @@
 
 .works__item {
   margin-bottom: 48px;
+  margin-inline: auto;
 
   @include  variable.mq("md") {
     flex: 0 0 calc(50% - 20px);

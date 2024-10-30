@@ -5,6 +5,8 @@
 
 .works2__highlight__content {
   display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
 
   @include variable.mq("md") {
     flex-direction: row;
@@ -28,6 +30,11 @@
   line-height: 1.6;
   display: flex;
   align-items: center;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    font-size: 16px;
+  }
 }
 
 .works2__highlight__content-2 {
@@ -59,6 +66,11 @@
   line-height: 1.6;
   display: flex;
   align-items: center;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    font-size: 16px;
+  }
 }
 
 .works2__highlight__image__drawer {
@@ -76,7 +88,11 @@
 }
 
 .works2__drawer-text {
+  font-size: 14px;
 
+  @include variable.mq("md") {
+    font-size: 16px;
+  }
 }
 
 .works2__highlight__image__qa {
@@ -95,6 +111,11 @@
   line-height: 1.6;
   display: flex;
   align-items: center;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    font-size: 16px;
+  }
 }
 
 .works2__qa-text {
@@ -117,6 +138,11 @@
   line-height: 1.6;
   display: flex;
   align-items: center;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    font-size: 16px;
+  }
 }
 
 .works2__modal__text-1 {
@@ -145,8 +171,15 @@
 }
 
 .works2__arrow-1 {
-  margin-inline: 10px;
-  top: 50%;
+  margin-inline: 3px;
+  top: 63px;
+  width: 60px;
+  height: 11px;
+
+  @include variable.mq("md") {
+    margin-inline: 10px;
+    top: 50%;
+  }
 }
 
 .works2__form__image-2 {
@@ -160,6 +193,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    font-size: 16px;
+  }
 }
 
 .works2__form__text-1 {
@@ -189,8 +227,14 @@
 }
 
 .works2__arrow-2 {
+  width: 36px;
+  height: 18px;
+  top: 29px;
   margin-inline: 10px;
-  top: 56px;
+
+  @include variable.mq("md") {
+    top: 56px;
+  }
 }
 
 .works2__hover__image1-2 {
@@ -201,6 +245,11 @@
   line-height: 1.6;
   display: flex;
   align-items: center;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    font-size: 16px;
+  }
 }
 
 .works2__hover__image3 {
@@ -214,7 +263,13 @@
 
 .works2__arrow-3 {
   margin: 10px;
-  top: 19px;
+  top: 5px;
+  width: 36px;
+  height: 18px;
+
+  @include variable.mq("md") {
+    top: 19px;
+  }
 }
 
 .works2__hover__image3-2 {
@@ -237,7 +292,13 @@
 
 .works2__arrow-5 {
   margin-inline: 10px;
-  top: 8px;
+  top: 5px;
+  width: 36px;
+  height: 18px;
+
+  @include variable.mq("md") {
+    top: 8px;
+  }
 }
 
 .works2__hover__image5-2 {
@@ -251,7 +312,9 @@
 }
 
 .works__responsive__text {
-
+  line-height: 1.5;
+  margin-left: 0;
+  font-size: 12px;
 }
 
 .works__responsive__fv {
@@ -263,15 +326,23 @@
 }
 
 .works__responsive__fv__title {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.6;
+
+  @include variable.mq("md") {
+    font-size: 18px;
+  }
 }
 
 .works__responsive__fv__image {
   margin-top: 20px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
+
+  @include variable.mq("md") {
+    gap: 20px;
+  }
 }
 
 .works__responsive__fv__image1 {
