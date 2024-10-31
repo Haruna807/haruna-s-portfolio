@@ -61,10 +61,19 @@
 
 .works-info__items {
   margin-top: 30px;
-  margin-left: 25px;
+  margin-left: 50px;
+
+  @include variable.mq("xs") {
+    margin-left: 20px;
+  }
 
   @include variable.mq("md") {
     margin-top: 50px;
+    margin-left: 150px;
+  }
+
+  @include variable.mq("lg") {
+    margin-left: 200px;
   }
 }
 
@@ -76,7 +85,7 @@
     width: 679px;
     margin-right: auto;
     margin-top: 43px;
-    margin-left: 450px;
+    margin-left: auto;
     flex-direction: row;
   }
 }
@@ -114,7 +123,12 @@
 }
 
 .info-item__text-c {
-  margin-left: 75px;
+  margin-left: 20px;
+
+  @include variable.mq("md") {
+    margin-left: 75px;
+  }
+  
 }
 
 .info-item__text-o {
@@ -164,6 +178,13 @@
   @include variable.mq("md") {
     margin-top: 65px;
     margin-inline: 170px;
+    padding-top: 61px;
+    padding-bottom: 61px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include variable.mq("xl") {
     padding-top: 61px;
     padding-bottom: 61px;
     padding-left: 139px;
@@ -230,8 +251,12 @@
   margin-inline: 30px;
 
   @include variable.mq("md") {
-    margin-inline: 170px;
+    margin-inline: 100px;
     margin-top: 187px;
+  }
+
+  @include variable.mq("lg") {
+    margin-inline: 170px;
   }
 }
 
@@ -255,6 +280,15 @@
   margin-top: 50px;
 }
 
+.works__highlight__content__f {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include variable.mq("xl") {
+    flex-direction: row;
+  }
+}
+
 
 .arrow {
   display: inline-block;
@@ -273,9 +307,13 @@
 
 .works__highlight-content {
   margin-top: 50px;
-  margin-left: 0;
+  margin-left: 20px;
 
   @include variable.mq("md") {
+    margin-left: 40px;
+  }
+
+  @include variable.mq("xl") {
     margin-left: 60px;
   }
 }
@@ -284,7 +322,7 @@
   display: flex;
   flex-direction: column;
 
-  @include variable.mq("md") {
+  @include variable.mq("xl") {
     flex-direction: row;
   }
 }
@@ -292,13 +330,13 @@
 .works__highlight__content-item:not(:first-child) {
   margin-top: 30px;
 
-  @include variable.mq("md") {
-    margin-top: 0;
+  @include variable.mq("lg") {
+    margin-top: 40px;
   }
 }
 
 .works__highlight__content-item-2 {
-  @include variable.mq("md") {
+  @include variable.mq("lg") {
     margin-top: 40px;
   }
 }
@@ -312,7 +350,7 @@
 .works__highlight__content-item__text {
   font-size: 12px;
 
-  @include variable.mq("md") {
+  @include variable.mq("lg") {
     font-size: 15px;
   }
 }
@@ -327,8 +365,13 @@
 }
 
 .works__responsive__text {
-  line-height: 1.8;
-  margin-left: 80px;
+  line-height: 1.5;
+  margin-left: 0;
+  font-size: 12px;
+
+  @include variable.mq("md") {
+    font-size: 14px;
+  }
 }
 
 
@@ -339,8 +382,12 @@
   padding: 60px 20px;
   margin-bottom: 80px;
 
-  @include variable.mq("md") {
-    width: 1140px;
+  @include variable.mq("sm") {
+    padding-inline: 40px;
+  }
+
+  @include variable.mq("lg") {
+    max-width: 1140px;
     padding: 60px;
     margin-bottom: 130px;
   }

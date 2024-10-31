@@ -8,7 +8,7 @@
   flex-direction: column-reverse;
   gap: 10px;
 
-  @include variable.mq("md") {
+  @include variable.mq("lg") {
     flex-direction: row;
     gap: 50px;
   }
@@ -19,6 +19,8 @@
   @include variable.mq("md") {
     width: 560px;
     padding: 20px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -38,7 +40,9 @@
 }
 
 .works2__highlight__content-2 {
-
+  @include variable.mq("md") {
+    margin-top: 80px;
+  }
 }
 
 .works2__slider__image_2 {
@@ -74,11 +78,25 @@
 }
 
 .works2__highlight__image__drawer {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  width: 200px;
+  padding: 15px;
 
+  @include variable.mq("md") {
+    width: 330px;
+    margin-top: 20px;
+  }
+
+  @include variable.mq("lg") {
+    width: 400px;
+    padding: 20px;
+  }
 }
 
 .works2__drawer__image {
-
+  
 }
 
 .works2__drawer__text {
@@ -162,6 +180,10 @@
 .works2__form__image-1 {
 
   @include variable.mq("md") {
+    width: 270px;
+  }
+
+  @include variable.mq("lg") {
     width: 250px;
   }
 }
@@ -178,12 +200,22 @@
 
   @include variable.mq("md") {
     margin-inline: 10px;
+    top: 100px;
+    width: 40px;
+    height: 35px;
+  }
+
+  @include variable.mq("lg") {
     top: 50%;
   }
 }
 
 .works2__form__image-2 {
   @include variable.mq("md") {
+    width: 270px;
+  }
+
+  @include variable.mq("lg") {
     width: 250px;
   }
 }
@@ -219,11 +251,20 @@
 .works2__hover__image1 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
 }
 
 .works2__hover__image1-1 {
   width: 255px;
+
+  @include variable.mq("md") {
+    width: 280px;
+  }
+
+  @include variable.mq("lg") {
+    width: 255px;
+  }
 }
 
 .works2__arrow-2 {
@@ -232,13 +273,31 @@
   top: 29px;
   margin-inline: 10px;
 
+  @include variable.mq("sm") {
+    top: 68px;
+  }
+
   @include variable.mq("md") {
-    top: 56px;
+    top: 68px;
+    width: 40px;
+    height: 35px;
+  }
+
+  @include variable.mq("lg") {
+    top: 59px;
   }
 }
 
 .works2__hover__image1-2 {
   width: 255px;
+
+  @include variable.mq("md") {
+    width: 280px;
+  }
+
+  @include variable.mq("lg") {
+    width: 255px;
+  }
 }
 
 .works2__hover__text {
@@ -267,8 +326,13 @@
   width: 36px;
   height: 18px;
 
+  @include variable.mq("sm") {
+    top: 30px;
+  }
+
   @include variable.mq("md") {
     top: 19px;
+    height: 28px;
   }
 }
 
@@ -296,8 +360,13 @@
   width: 36px;
   height: 18px;
 
+  @include variable.mq("sm") {
+    top: 17px;
+  }
+
   @include variable.mq("md") {
     top: 8px;
+    height: 28px;
   }
 }
 
@@ -311,16 +380,10 @@
   }
 }
 
-.works__responsive__text {
-  line-height: 1.5;
-  margin-left: 0;
-  font-size: 12px;
-}
-
 .works__responsive__fv {
 
-  @include variable.mq("md") {
-    margin-left: 80px;
+  @include variable.mq("lg") {
+    margin-left: 20px;
   }
   
 }
@@ -392,8 +455,11 @@
 
   @include variable.mq("md") {
     width: 600px;
-    left: 20%;
     margin-top: 30px;
+  }
+
+  @include variable.mq("xl") {
+    left: 20%;
   }
   
 }

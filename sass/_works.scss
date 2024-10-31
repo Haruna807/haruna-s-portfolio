@@ -142,6 +142,10 @@
   padding-top: 14px;
   max-width: 500px;
 
+  @include variable.mq("md") {
+    max-width: 900px;
+  }
+
 }
 
 .works-card__description {

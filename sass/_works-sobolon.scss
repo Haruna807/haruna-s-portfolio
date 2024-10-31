@@ -4,48 +4,132 @@
 .works3__highlight__content {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
+  flex-direction: column-reverse;
+
+  @include variable.mq("lg") {
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .works3__hover__image_1 {
-  padding: 30px 40px;
+  padding: 20px;
+
+  @include variable.mq("md") {
+    margin-left: 60px;
+  }
+
+  @include variable.mq("lg") {
+    margin-left: 10px;
+  }
+  
 }
 
 .works3__hover__image1 {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+
+  @include variable.mq("lg") {
+    width: 400px;
+  }
 }
 
 .works3__hover__image1-1 {
-  width: 200px;
+  width: 120px;
+
+  @include variable.mq("sm") {
+    width: 180px;
+  }
+
+  @include variable.mq("md") {
+    width: 225px;
+  }
+
+  @include variable.mq("lg") {
+    width: 240px;
+  }
 }
 
 .works3__arrow {
+  width: 25px;
+  height: 18px;
+  top: 66px;
+  margin-inline: 5px;
 
+  @include variable.mq("sm") {
+    top: 105px;
+    margin-inline: 10px;
+    width: 30px;
+    height: 23px;
+  }
+
+  @include variable.mq("md") {
+    top: 68px;
+    width: 40px;
+    height: 35px;
+  }
+
+  @include variable.mq("lg") {
+    top: 123px;
+  }
 }
 
 .works3__hover__image1-2 {
-  width: 200px;
+  width: 120px;
+
+  @include variable.mq("sm") {
+    width: 180px;
+  }
+
+  @include variable.mq("md") {
+    width: 225px;
+  }
+
+  @include variable.mq("lg") {
+    width: 240px;
+  }
 }
 
 .works3__hover__text {
-  line-height: 2.4;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    font-size: 16px;
+  }
 }
 
 .works3__hover__image2 {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   margin-top: 20px;
 }
 
 .works3__hover__image2-1 {
-  width: 220px;
+  width: 120px;
+
+  @include variable.mq("md") {
+    width: 220px;
+  }
 }
 
 .works3__arrow-2 {
-  top: 50px;
+  margin: 10px;
+  top: 23px;
+  width: 36px;
+  height: 18px;
+
+  @include variable.mq("sm") {
+    top: 30px;
+  }
+
+  @include variable.mq("md") {
+    top: 19px;
+    height: 28px;
+  }
 }
 
 .works3__hover__image2-2 {
@@ -56,53 +140,147 @@
   margin-top: 60px;
 }
 
+.works3__hover__image_2 {
+  @include variable.mq("md") {
+    margin-left: 60px;
+  }
+
+  @include variable.mq("lg") {
+    margin-left: 10px;
+  }
+}
+
 .works3__hover__image3 {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+
+  @include variable.mq("lg") {
+    width: 400px;
+  }
 }
 
 .works3__hover__image3-1 {
-  width: 200px;
+  width: 120px;
+
+  @include variable.mq("sm") {
+    width: 180px;
+  }
+
+  @include variable.mq("md") {
+    width: 220px;
+  }
 }
 
 .works3__arrow-3 {
-  top: 38px;
+  margin-inline: 5px;
+  top: 23px;
+
+  @include variable.mq("sm") {
+    top: 37px;
+    margin-inline: 10px;
+  }
+
+  @include variable.mq("md") {
+    top: 8px;
+    height: 28px;
+  }
 }
 
 .works3__hover__image3-2 {
-  width: 200px;
+  width: 120px;
+
+  @include variable.mq("sm") {
+    width: 180px;
+  }
+
+  @include variable.mq("md") {
+    width: 220px;
+  }
 }
 
 
 
 .works3__hover__image4 {
-  width: 500px;
+  width: auto;
   margin-top: 20px;
+
+  @include variable.mq("sm") {
+    width: 400px;
+  }
+
+  @include variable.mq("md") {
+    width: 400px;
+  }
 }
 
 .works3__hover__image5 {
   display: flex;
   margin-top: 20px;
-  gap: 20px;
+  justify-content: center;
 }
 
 .works3__hover__image5-1 {
-  width: 210px;
+  width: 120px;
+
+  @include variable.mq("sm") {
+    width: 180px;
+  }
+
+  @include variable.mq("md") {
+    width: 220px;
+  }
+
+  @include variable.mq("lg") {
+    width: 170px;
+  }
 }
 
 
 
 .works3__arrow-5 {
-  top: 31px;
+  top: 17px;
+
+  @include variable.mq("sm") {
+    top: 29px;
+  }
 }
 
 .works3__hover__image5-2 {
-  width: 210px;
+  width: 120px;
+
+  @include variable.mq("sm") {
+    width: 180px;
+  }
+
+  @include variable.mq("md") {
+    width: 220px;
+  }
+
+  @include variable.mq("lg") {
+    width: 170px;
+  }
 }
 
 .works3__highlight__image__form {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  width: 200px;
+  padding: 15px;
+
+  @include variable.mq("sm") {
+    width: 300px;
+    margin-top: 10px;
+  }
+
   @include variable.mq("md") {
-    width: 560px;
+    width: 330px;
+    margin-top: 20px;
+  }
+
+  @include variable.mq("lg") {
+    width: 400px;
+    padding: 20px;
   }
 }
 
@@ -117,7 +295,17 @@
 }
 
 .works3__form__text {
-  line-height: 2.0;
+  line-height: 1.6;
+  align-items: center;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    font-size: 16px;
+  }
+
+  @include variable.mq("lg") {
+    margin-left: 40px;
+  }
 }
 
 .works3__form__text-1 {
@@ -130,7 +318,30 @@
 
 
 .works3__highlight__image__drawer {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  width: 200px;
+  padding: 15px;
 
+  @include variable.mq("sm") {
+    width: 300px;
+    margin-top: 10px;
+  }
+
+  @include variable.mq("md") {
+    width: 330px;
+    margin-top: 20px;
+  }
+
+  @include variable.mq("lg") {
+    width: 270px;
+  }
+
+  @include variable.mq("xl") {
+    width: 400px;
+    padding: 20px;
+  }
 }
 
 .works3__drawer__image {
@@ -144,7 +355,13 @@
 }
 
 .works3__drawer__text {
-  line-height: 2.0;
+  line-height: 1.6;
+  align-items: center;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    font-size: 16px;
+  }
 }
 
 .works3__drawer__text-1 {
@@ -153,6 +370,12 @@
 
 .works3__drawer__text-2 {
   margin-top: 30px;
+}
+
+.works3__responsive__text {
+  @include variable.mq("lg") {
+    margin-left: 40px;
+  }
 }
 
 

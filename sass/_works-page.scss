@@ -70,6 +70,12 @@
   }
 }
 
+.works__items .works__item:last-child {
+  @include variable.mq("md") {
+    margin-right: 50%;
+  }
+}
+
 
 
 .works__item__description {

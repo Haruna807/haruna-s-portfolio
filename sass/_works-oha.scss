@@ -12,9 +12,11 @@
 }
 
 .works4__header__image {
+  margin-top: 10px;
+
   @include variable.mq("md") {
     width: 560px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -23,22 +25,39 @@
 }
 
 .works4__header__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 
 .works4__highlight__content-2 {
+
+
   @include variable.mq("md") {
     gap: 80px;
   }
 }
 
 .works4__drawer__image {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  width: auto;
+  max-width: 200px;
+
+  @include variable.mq("sm") {
+    max-width: 300px;
+  }
+
   @include variable.mq("md") {
     width: 450px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -47,13 +66,19 @@
 }
 
 .works4__slider__text-2 {
-  font-size: 15px;
+  font-size: 14px;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works4__case__image {
+  margin-top: 10px;
+
   @include variable.mq("md") {
     width: 560px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -62,15 +87,21 @@
 }
 
 .works4__case__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works4__news__image {
+  margin-top: 10px;
+
   @include variable.mq("md") {
     width: 560px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -79,15 +110,21 @@
 }
 
 .works4__news__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works4__modal__image {
+  margin-top: 10px;
+
   @include variable.mq("md") {
     width: 560px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -96,9 +133,13 @@
 }
 
 .works4__modal__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works4__highlight__content-y {
@@ -108,9 +149,11 @@
 }
 
 .works4__movie__image {
+  margin-top: 10px;
+
   @include variable.mq("md") {
     width: 560px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -119,15 +162,23 @@
 }
 
 .works4__movie__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works4__howtouse-merit__image {
+  margin-top: 20px;
+  margin-inline: auto;
+  max-width: 470px;
+
   @include variable.mq("md") {
     width: 620px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     gap: 20px;
   }
@@ -142,9 +193,13 @@
 }
 
 .works4__howtouse__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works4__highlight__content-3 {
@@ -154,9 +209,11 @@
 }
 
 .works4__compare__image {
+  margin-top: 10px;
+
   @include variable.mq("md") {
     width: 560px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -165,15 +222,23 @@
 }
 
 .works4__compare__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works4__compare__image_sp {
+  margin-top: 10px;
+  margin-inline: auto;
+  max-width: 300px;
+
   @include variable.mq("md") {
     width: 450px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -182,15 +247,21 @@
 }
 
 .works4__compare__text-2 {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works4__qa__image {
+  margin-top: 10px;
+
   @include variable.mq("md") {
     width: 560px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -199,15 +270,21 @@
 }
 
 .works4__qa__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works4__gallery__image {
+  margin-top: 10px;
+
   @include variable.mq("md") {
     width: 560px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -216,15 +293,21 @@
 }
 
 .works4__gallery__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
 }
 
 .works4__contact__image {
+  margin-top: 10px;
+
   @include variable.mq("md") {
     width: 560px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -233,18 +316,31 @@
 }
 
 .works4__contact__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
+}
+
+.works4__highlight__image_hover {
+  width: fit-content;
+  padding: 10px;
 }
 
 .work4__hover__image1 {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .works4__hover__image1-1 {
   width: 200px;
+
+  @include variable.mq("md") {
+    width: 150px;
+  }
 }
 
 .works4__arrow {
@@ -252,39 +348,83 @@
 }
 
 .works4__arrow-1 {
+  height: 20px;
+  top: 13px;
 
+  @include variable.mq("sm") {
+    top: 26px;
+  }
+
+  @include variable.mq("md") {
+    width: 27px;
+    top: 19px;
+  }
 }
 
 .works4__hover__image1-2 {
   width: 200px;
+
+  @include variable.mq("md") {
+    width: 150px;
+  }
 }
 
 .works4__hover__image2 {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   margin-top: 20px;
 }
 
 .works4__hover__image2-1 {
   width: 200px;
+
+  @include variable.mq("md") {
+    width: 150px;
+  }
 }
 
 .works4__arrow-2 {
+  height: 20px;
+  top: 13px;
 
+  @include variable.mq("sm") {
+    top: 26px;
+  }
+
+  @include variable.mq("md") {
+    width: 27px;
+    top: 19px;
+  }
 }
 
 .works4__hover__image2-2 {
   width: 200px;
+
+  @include variable.mq("md") {
+    width: 150px;
+  }
 }
 
 .works4__hover__image3 {
-  width: 480px;
+  width: auto;
+  max-width: 400px;
   margin-top: 20px;
 }
 
 .works4__hover__text {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+
+  @include variable.mq("md") {
+    font-size: 15px;
+  }
+}
+
+.works4__highlight__content__hover {
+  @include variable.mq("md") {
+    gap: 30px;
+  }
 }
 
