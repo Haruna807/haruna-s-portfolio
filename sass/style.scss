@@ -89,6 +89,7 @@ body {
   font-size: 12px;
   letter-spacing: 3px;
   padding: 5px;
+  transition: background-color 0.3s, color 0.3s;
 
   @include variable.mq("md") {
     width: 170px;
@@ -96,6 +97,17 @@ body {
     font-size: 15px;
     letter-spacing: 6px;
     padding: 10px;
+  }
+
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #000;
+    
+    @include variable.mq("md") {
+      padding-top: 9px;
+    }
   }
 }
 
@@ -133,161 +145,64 @@ body {
 }
 
 
-// ヘッダー
+// スクロール時のアニメーション
 
 
-// .header {
-//   height: $header-height-sp;
-//   background-color: #fff;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   z-index: 1000;
-//   box-sizing: border-box;
-// }
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.5s, transform 1s;
 
-// .header__inner {
-//   height: inherit;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
 
-//   @include mq("md") {
-//     padding-right: 60px;
-//   }
-// }
+  }
+}
 
-// .header__logo {
-//   align-items: center;
-//   a {
-//     img {
-//       width: 146px;
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(100px); /* 右から */
+  transition: opacity 1s, transform 1s;
 
-//       @include mq("md") {
-//         width: 262px;
-//       }
-//     }
-//   }
-// }
+  &.is-in-view {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-// .header__nav {
-//   display: none;
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-100px); /* 左から */
+  transition: opacity 1.5s, transform 1.5s;
 
-//   @include mq("md") {
-//     display: flex;
-//     justify-content: flex-end;
-//     align-items: center;
-//     gap: 40px;
-//   }
-// }
+  &.is-in-view {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-// .header__link {
+.fade-in-up-s {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1s, transform 1s;
+  visibility: hidden;
+  
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    animation-duration: 1.5s;
+    animation-name: myFadeIn;
+    animation-fill-mode: forwards;
+  }
+}
 
-// }
-
-// .header_open {
-
-//   @include mq("md") {
-//     display: none;
-//   }
-// }
-
-// .drawer-icon {
-//   width: 49px;
-//   height: 49px;
-//   position: relative;
-//   z-index: 51;
-//   background-color: #000;
-
-//   &.is-checked {
-//     .drawer-icon_bar {
-//       &:nth-of-type(1) {
-//         top: 21px;
-//         transform: rotate(40deg);
-//       }
-
-//       &:nth-of-type(2) {
-//         display: none;
-//       }
-
-//       &:nth-of-type(3) {
-//         top: 21px;
-//         transform: rotate(-40deg);
-//       }
-//     }
-//   }
-// }
-
-// .drawer-icon_bar {
-//   position: absolute;
-//   top: 15px;
-//   left: 30%;
-//   width: 20px;
-//   height: 1px;
-//   border-radius: 6px;
-//   background: #fff;
-//   transition: transform 0.3s linear, top 0.3s linear;
-
-//   &:nth-of-type(1) {
-
-//   }
-
-//   &:nth-of-type(2) {
-//     top: 24px;
-//   }
-
-//   &:nth-of-type(3) {
-//     top: 33px;
-//   }
-// }
-
-
-// // ドロワーメニュー
-
-// .drawer__content {
-//   width: 100%;
-//   height: 100%;
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   background: #000;
-//   z-index: 50;
-//   padding: 86px 40px 40px;
-//   transform: translateX(100%);
-//   transition: transform 0.3s linear;
-
-//   &.is-checked {
-//     transform: translateX(0);
-//   }
-// }
-
-// .drawer__content-menu {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .drawer__content-link {
-//   display: inline-block;
-//   padding-top: 14px;
-//   padding-bottom: 14px;
-//   text-align: center;
-//   font-weight: 500;
-//   font-size: 14px;
-//   letter-spacing: 0.48px;
-//   color: #fff;
-//   position: relative;
-
-//   &::before {
-//     content: "";
-//     border-top: 1px solid #fff;
-//     width: 13px;
-//     height: 1px;
-//     position: absolute;
-//     left: 97px;
-//     top: 50%;
-//     transform: translateY(-50%);
-//   }
-// }
-
-
-
+@keyframes myFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

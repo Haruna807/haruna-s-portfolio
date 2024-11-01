@@ -181,6 +181,8 @@
     padding: 10px;
     display: flex;
     gap: 20px;
+    margin-left: 0;
+    margin-right: 30px;
   }
 }
 
@@ -239,6 +241,9 @@
   @include variable.mq("md") {
     width: 450px;
     padding: 10px;
+    margin-right: 10px;
+    margin-left: 100px;
+
   }
 }
 

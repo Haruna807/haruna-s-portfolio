@@ -103,6 +103,10 @@
   width: calc(100% - 100px);
   margin-inline: auto;
 
+  @media (max-width: 374px) {
+    width: calc(100% - 10px);
+  }
+
   @include variable.mq("lg") {
     width: calc(100% - 200px);
     margin-inline: auto;
@@ -111,6 +115,7 @@
   @include variable.mq("xl") {
     width: calc(100% - 500px);
   }
+
 }
 
 .works-slide:nth-child(3) {
@@ -138,14 +143,26 @@
 }
 
 .works-card__image {
+  position: relative;
   background: #e8e1ee;
   padding-top: 14px;
   max-width: 500px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
 
   @include variable.mq("md") {
     max-width: 900px;
   }
 
+  img {
+    width: 100%;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+  }
+}
+
+.works-card__image:hover img {
+  transform: scale(1.1);
+  opacity: 0.6;
 }
 
 .works-card__description {

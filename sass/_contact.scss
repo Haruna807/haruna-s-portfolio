@@ -57,9 +57,19 @@
 .contact__mail__icon {
   width: 80px;
   margin-inline: auto;
+  position: relative;
   
   @include variable.mq("md") {
     width: 100px;
+  }
+
+  img {
+    transition: opacity 0.3s ease;
+  }
+
+  
+  &:hover img {
+    opacity: 0.5;
   }
 }
 
@@ -82,9 +92,19 @@
 .contact__x__icon {
   width: 83px;
   margin-inline: auto;
+  position: relative;
 
   @include variable.mq("md") {
     width: 100px;
+  }
+
+  img {
+    transition: opacity 0.3s ease;
+  }
+
+  
+  &:hover img {
+    opacity: 0.5;
   }
 }
 

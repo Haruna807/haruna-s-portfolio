@@ -4,6 +4,7 @@ jQuery("#js-drawer-icon").on("click", function(e) {
   e.preventDefault();
   jQuery("#js-drawer-icon").toggleClass("is-checked");
   jQuery("#js-drawer-content").toggleClass("is-checked");
+  jQuery("body").toggleClass("is-fixed");
 });
 
 // スライダー
@@ -34,6 +35,24 @@ var mySwiper = new Swiper('.swiper', {
       spaceBetween: 0,
     },
   },
+});
+
+
+// スクロール時のアニメーション
+
+const intersectionObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-in-view");
+    } else {
+      // entry.target.classList.remove("is-in-view"); /* 一度表示されたらそのまま */
+    }
+  });
+});
+
+const inViewItems = document.querySelectorAll(".js-in-view");
+inViewItems.forEach(function(inViewItem) {
+  intersectionObserver.observe(inViewItem);
 });
 
 

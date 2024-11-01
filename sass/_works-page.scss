@@ -84,11 +84,23 @@
 }
 
 .works__item__link {
+  display: block;
   text-decoration: none;
 }
 
 .works__item__image {
   background: transparent;
+  transition: transform 0.3s ease;
+  overflow: visible;
+
+  img {
+    display: block;
+    width: 100%;
+
+    &:hover .works__item__image {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .works__item__title {
