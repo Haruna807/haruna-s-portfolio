@@ -19,32 +19,19 @@
 }
 
 .works__highlight__title {
-    &.is-in-view {
-      transition-delay: 0.5s; /* デフォルトの遅延 */
-    }
+    
   }
+
+.works__highlight__title-1 {
+  &.is-in-view {
+    transition-delay: 0.5s;
+  }
+}
 
 
 .profile__info__container {
-  .js-in-view {
-    &.is-in-view {
-      transition-delay: 0.7s; /* デフォルトの遅延 */
-    }
-
-    &:nth-child(1).is-in-view {
-      transition-delay: 0.9s; /* 最初の要素は即表示 */
-    }
-    &:nth-child(2).is-in-view {
-      transition-delay: 1.2s; /* 2つ目の要素は0.3秒遅延 */
-    }
-    &:nth-child(3).is-in-view {
-      transition-delay: 1.5s; /* 3つ目の要素は0.6秒遅延 */
-    }
-    &:nth-child(4).is-in-view {
-      transition-delay: 1.8s; /* 4つ目の要素は0.9秒遅延 */
-    }
-    /* 必要に応じて追加 */
-  }
+  
+  
 }
 
 .profile__info {
@@ -75,20 +62,26 @@
 
 .profile__info__image {
   width: 220px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-inline: auto;
   position: relative;
+
+  &.is-in-view {
+    transition-delay: 0.7s;
+  }
 
   @include variable.mq("md") {
     transform: translateX(0);
     width: 240px;
     position: static;
+    margin-inline: 0;
   }
 
 }
 
 .profile__personal-info {
   text-align: center;
+
+
 
   @include variable.mq("md") {
     margin-top: 16px;
@@ -107,6 +100,11 @@
 
 .profile__info__name {
   margin-top: 30px;
+
+  &.is-in-view {
+    transition-delay: 0.7s;
+  }
+
 }
 
 .about__name__ja {
@@ -123,6 +121,10 @@
   line-height: 20px;
   letter-spacing: 1.92px;
   margin-top: 20px;
+
+  &.is-in-view {
+    transition-delay: 0.9s;
+  }
 
   @include variable.mq("md") {
     font-size: 20px;
@@ -142,6 +144,24 @@
 .profile__info__career {
   margin-top: 40px;
 
+  .js-in-view {
+    &.is-in-view {
+      transition-delay: 0s;
+    }
+
+    &:nth-child(1).is-in-view {
+      transition-delay: 0s;
+    }
+    &:nth-child(2).is-in-view {
+      transition-delay: 0.2s;
+    }
+    &:nth-child(3).is-in-view {
+      transition-delay: 0.4s;
+    }
+    &:nth-child(4).is-in-view {
+      transition-delay: 0.6s;
+    }
+
   @include variable.mq("sm") {
     margin-inline: 50px;
   }
@@ -149,6 +169,7 @@
   @include variable.mq("md") {
     margin-top: 75px;
   }
+}
 }
 
 .career__items {
@@ -236,6 +257,22 @@
 
 .motivation__inner {
   padding: 40px 30px;
+
+  .js-in-view {
+    &.is-in-view {
+      transition-delay: 0s;
+    }
+
+    &:nth-child(1).is-in-view {
+      transition-delay: 0s;
+    }
+    &:nth-child(2).is-in-view {
+      transition-delay: 0.3s;
+    }
+    &:nth-child(3).is-in-view {
+      transition-delay: 0.8s;
+    }
+  }
 
   @include variable.mq("md") {
     padding: 60px 75px;
@@ -329,16 +366,14 @@
     transform: translateY(0);
     visibility: visible;
 
-
-    /* 遅延をカードのインデックスに基づいて設定 */
     &:nth-child(1).is-in-view {
-      transition-delay: 0s; /* 最初のカードは即表示 */
+      transition-delay: 0.3s;
     }
     &:nth-child(2).is-in-view {
-      transition-delay: 0.4s; /* 2つ目は0.2秒遅延 */
+      transition-delay: 0.7s;
     }
     &:nth-child(3).is-in-view {
-      transition-delay: 0.8s; /* 3つ目は0.4秒遅延 */
+      transition-delay: 1.1s;
     }
   }
 
@@ -432,11 +467,28 @@
 }
 
 .vision__inner {
-
+  
 }
 
 .vision__cards {
   margin-top: 30px;
+
+  .js-in-view {
+    &.is-in-view {
+      animation-delay: 0.3s;
+      animation-duration: 0.7s;
+    }
+
+    &:nth-child(1).is-in-view {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(2).is-in-view {
+      animation-delay: 0.6s;
+    }
+    &:nth-child(3).is-in-view {
+      animation-delay: 0.9s;
+    }
+  }
 
   @include variable.mq("md") {
     margin-top: 104px;
@@ -555,6 +607,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  .js-in-view {
+    &.is-in-view {
+      animation-delay: 0s;
+      animation-duration: 1s;
+    }
+
+    &:nth-child(1).is-in-view {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(2).is-in-view {
+      animation-delay: 0.6s;
+    }
+    &:nth-child(3).is-in-view {
+      animation-delay: 0.9s;
+    }
+    &:nth-child(4).is-in-view {
+      animation-delay: 1.2s;
+    }
+  }
 }
 
 .favorite__item {
@@ -646,6 +718,11 @@
   }
 
   @include variable.mq("lg") {
+    font-size:		13px;
+    padding-top:		50px;
+  }
+
+  @include variable.mq("xl") {
     font-size:		16px;
     padding-top:		120px;
   }

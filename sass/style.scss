@@ -206,3 +206,28 @@ body {
     opacity: 1;
   }
 }
+
+
+
+
+.blur {
+  transition: opacity 1.3s;
+  opacity: 0;
+
+  &.is-in-view {
+    animation-name: blurAnime;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes blurAnime {
+  from {
+    filter: blur(10px); /* 初めは10pxのぼかし */
+    opacity: 0; /* 初期状態は透明 */
+  }
+  to {
+    filter: blur(0); /* 最後はぼかしなし */
+    opacity: 1; /* 最後は完全に表示 */
+  }
+}

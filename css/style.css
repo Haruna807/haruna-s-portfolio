@@ -1015,6 +1015,10 @@
 .contact__text {
   text-align: center;
 }
+.contact__text.is-in-view {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
 @media screen and (min-width:768px) {
   .contact__text {
     margin-bottom: 60px;
@@ -1058,6 +1062,11 @@
   }
 }
 
+.contact__mail.is-in-view {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
 .contact__mail__icon {
   width: 80px;
   margin-inline: auto;
@@ -1086,6 +1095,10 @@
   }
 }
 
+.contact__x.is-in-view {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
 @media screen and (min-width:768px) {
   .contact__x {
     width: 178px;
@@ -1271,6 +1284,10 @@
   margin-bottom: 48px;
   margin-inline: auto;
 }
+.works__item.is-in-view {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
 @media screen and (min-width:768px) {
   .works__item {
     -webkit-box-flex: 0;
@@ -1372,6 +1389,10 @@
   text-align: center;
   letter-spacing: 1.5px;
 }
+.works-page__title.is-in-view {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
 @media screen and (min-width:768px) {
   .works-page__title {
     font-size: 36px;
@@ -1388,6 +1409,10 @@
   text-align: center;
   margin-top: 7px;
 }
+.works-page__text.is-in-view {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
 @media screen and (min-width:600px) {
   .works-page__text {
     font-size: 15px;
@@ -1403,6 +1428,10 @@
 .works-info__items {
   margin-top: 30px;
   margin-left: 50px;
+}
+.works-info__items .js-in-view.is-in-view {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
 }
 @media screen and (max-width: 336px) {
   .works-info__items {
@@ -1490,11 +1519,20 @@
 .info-item__text-o {
   font-size: 11px;
 }
+@media screen and (min-width:768px) {
+  .info-item__text-o {
+    font-size: 18px;
+  }
+}
 
 .works-page__message {
   margin-top: 40px;
   text-align: center;
   font-size: 14px;
+}
+.works-page__message.is-in-view {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 @media screen and (min-width:768px) {
   .works-page__message {
@@ -1511,6 +1549,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 30px;
+}
+.works-page__button.is-in-view {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 @media screen and (min-width:768px) {
   .works-page__button {
@@ -1558,6 +1600,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.works__description-item.is-in-view {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 @media screen and (min-width:768px) {
   .works__description-item {
@@ -2398,6 +2444,24 @@
   }
 }
 
+.works2__highlight__content__f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+@media screen and (min-width:1200px) {
+  .works2__highlight__content__f {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 @media screen and (min-width:768px) {
   .works2__slider__image_1 {
     width: 560px;
@@ -2566,8 +2630,15 @@
 }
 @media screen and (min-width:768px) {
   .works2__form__image {
-    width: 650px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     padding: 20px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .works2__form__image {
+    width: 650px;
   }
 }
 
@@ -2596,7 +2667,7 @@
     height: 35px;
   }
 }
-@media screen and (min-width:900px) {
+@media screen and (min-width:1200px) {
   .works2__arrow-1 {
     top: 50%;
   }
@@ -2639,8 +2710,15 @@
 
 @media screen and (min-width:768px) {
   .works2__hover__image_1 {
-    width: 650px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     padding: 20px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .works2__hover__image_1 {
+    width: 650px;
   }
 }
 
@@ -2706,6 +2784,13 @@
 @media screen and (min-width:900px) {
   .works2__hover__image1-2 {
     width: 255px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .works2__hover__image_2 {
+    width: 650px;
+    padding: 20px;
   }
 }
 
@@ -2802,6 +2887,12 @@
   width: 250px;
 }
 
+.works2__highlight__content-3 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 @media screen and (min-width:768px) {
   .works2__highlight__content-3 {
     -webkit-box-orient: vertical;
@@ -2811,6 +2902,10 @@
   }
 }
 
+.works__responsive__fv {
+  background: linear-gradient(96deg, rgba(230, 238, 207, 0.28) 0%, rgba(191, 206, 236, 0.31) 0.01%, rgba(216, 153, 216, 0.27) 96.62%, rgba(219, 148, 214, 0.26) 96.63%);
+  padding: 20px;
+}
 @media screen and (min-width:900px) {
   .works__responsive__fv {
     margin-left: 20px;
@@ -2818,9 +2913,14 @@
 }
 
 .works__responsive__fv__title {
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 500;
   line-height: 1.6;
+}
+@media screen and (min-width:600px) {
+  .works__responsive__fv__title {
+    font-size: 15px;
+  }
 }
 @media screen and (min-width:768px) {
   .works__responsive__fv__title {
@@ -2845,6 +2945,11 @@
   font-size: 12px;
   margin-left: 10px;
   margin-bottom: 7px;
+}
+@media screen and (max-width: 336px) {
+  .works__responsive__fv__image-text {
+    font-size: 10px;
+  }
 }
 
 .works__highlight__content-item__image {
@@ -3354,33 +3459,9 @@
   }
 }
 
-.works__highlight__title.is-in-view {
+.works__highlight__title-1.is-in-view {
   -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s; /* デフォルトの遅延 */
-}
-
-.profile__info__container .js-in-view {
-  /* 必要に応じて追加 */
-}
-.profile__info__container .js-in-view.is-in-view {
-  -webkit-transition-delay: 0.7s;
-          transition-delay: 0.7s; /* デフォルトの遅延 */
-}
-.profile__info__container .js-in-view:nth-child(1).is-in-view {
-  -webkit-transition-delay: 0.9s;
-          transition-delay: 0.9s; /* 最初の要素は即表示 */
-}
-.profile__info__container .js-in-view:nth-child(2).is-in-view {
-  -webkit-transition-delay: 1.2s;
-          transition-delay: 1.2s; /* 2つ目の要素は0.3秒遅延 */
-}
-.profile__info__container .js-in-view:nth-child(3).is-in-view {
-  -webkit-transition-delay: 1.5s;
-          transition-delay: 1.5s; /* 3つ目の要素は0.6秒遅延 */
-}
-.profile__info__container .js-in-view:nth-child(4).is-in-view {
-  -webkit-transition-delay: 1.8s;
-          transition-delay: 1.8s; /* 4つ目の要素は0.9秒遅延 */
+          transition-delay: 0.5s;
 }
 
 .profile__info {
@@ -3428,10 +3509,12 @@
 
 .profile__info__image {
   width: 220px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin-inline: auto;
   position: relative;
+}
+.profile__info__image.is-in-view {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 @media screen and (min-width:768px) {
   .profile__info__image {
@@ -3439,6 +3522,7 @@
             transform: translateX(0);
     width: 240px;
     position: static;
+    margin-inline: 0;
   }
 }
 
@@ -3463,6 +3547,10 @@
 .profile__info__name {
   margin-top: 30px;
 }
+.profile__info__name.is-in-view {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
 
 .profile__info__hometown-birth-year {
   font-size: 14px;
@@ -3470,6 +3558,10 @@
   line-height: 20px;
   letter-spacing: 1.92px;
   margin-top: 20px;
+}
+.profile__info__hometown-birth-year.is-in-view {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
 }
 @media screen and (min-width:768px) {
   .profile__info__hometown-birth-year {
@@ -3482,13 +3574,33 @@
 .profile__info__career {
   margin-top: 40px;
 }
+.profile__info__career .js-in-view.is-in-view {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.profile__info__career .js-in-view:nth-child(1).is-in-view {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.profile__info__career .js-in-view:nth-child(2).is-in-view {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.profile__info__career .js-in-view:nth-child(3).is-in-view {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+.profile__info__career .js-in-view:nth-child(4).is-in-view {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
 @media screen and (min-width:600px) {
-  .profile__info__career {
+  .profile__info__career .js-in-view {
     margin-inline: 50px;
   }
 }
 @media screen and (min-width:768px) {
-  .profile__info__career {
+  .profile__info__career .js-in-view {
     margin-top: 75px;
   }
 }
@@ -3579,6 +3691,22 @@
 
 .motivation__inner {
   padding: 40px 30px;
+}
+.motivation__inner .js-in-view.is-in-view {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.motivation__inner .js-in-view:nth-child(1).is-in-view {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.motivation__inner .js-in-view:nth-child(2).is-in-view {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.motivation__inner .js-in-view:nth-child(3).is-in-view {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
 }
 @media screen and (min-width:768px) {
   .motivation__inner {
@@ -3689,19 +3817,18 @@
   -webkit-transform: translateY(0);
           transform: translateY(0);
   visibility: visible;
-  /* 遅延をカードのインデックスに基づいて設定 */
 }
 .strength__card.is-in-view:nth-child(1).is-in-view {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s; /* 最初のカードは即表示 */
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 .strength__card.is-in-view:nth-child(2).is-in-view {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s; /* 2つ目は0.2秒遅延 */
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 .strength__card.is-in-view:nth-child(3).is-in-view {
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s; /* 3つ目は0.4秒遅延 */
+  -webkit-transition-delay: 1.1s;
+          transition-delay: 1.1s;
 }
 @media screen and (min-width:768px) {
   .strength__card {
@@ -3799,6 +3926,24 @@
 
 .vision__cards {
   margin-top: 30px;
+}
+.vision__cards .js-in-view.is-in-view {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+.vision__cards .js-in-view:nth-child(1).is-in-view {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.vision__cards .js-in-view:nth-child(2).is-in-view {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.vision__cards .js-in-view:nth-child(3).is-in-view {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 @media screen and (min-width:768px) {
   .vision__cards {
@@ -3926,6 +4071,28 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.favorite__items .js-in-view.is-in-view {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.favorite__items .js-in-view:nth-child(1).is-in-view {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.favorite__items .js-in-view:nth-child(2).is-in-view {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.favorite__items .js-in-view:nth-child(3).is-in-view {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.favorite__items .js-in-view:nth-child(4).is-in-view {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
 
 .favorite__item {
   -webkit-box-flex: 1;
@@ -4021,6 +4188,12 @@
   }
 }
 @media screen and (min-width:900px) {
+  .favorite__item__description {
+    font-size: 13px;
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width:1200px) {
   .favorite__item__description {
     font-size: 16px;
     padding-top: 120px;
@@ -4237,5 +4410,44 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+.blur {
+  -webkit-transition: opacity 1.3s;
+  transition: opacity 1.3s;
+  opacity: 0;
+}
+.blur.is-in-view {
+  -webkit-animation-name: blurAnime;
+          animation-name: blurAnime;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes blurAnime {
+  from {
+    -webkit-filter: blur(10px);
+            filter: blur(10px); /* 初めは10pxのぼかし */
+    opacity: 0; /* 初期状態は透明 */
+  }
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0); /* 最後はぼかしなし */
+    opacity: 1; /* 最後は完全に表示 */
+  }
+}
+
+@keyframes blurAnime {
+  from {
+    -webkit-filter: blur(10px);
+            filter: blur(10px); /* 初めは10pxのぼかし */
+    opacity: 0; /* 初期状態は透明 */
+  }
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0); /* 最後はぼかしなし */
+    opacity: 1; /* 最後は完全に表示 */
   }
 }
