@@ -49,14 +49,12 @@
 
   @include variable.mq("lg") {
     gap: 106px;
-    margin-left: 130px;
-    justify-content: flex-start;
+    margin-left: 0;
+    justify-content: center;
   }
 
   @include variable.mq("xl") {
     gap: 171px;
-    margin-left: 130px;
-    justify-content: flex-start;
   }
 }
 
@@ -169,6 +167,10 @@
   @include variable.mq("md") {
     margin-top: 75px;
   }
+}
+
+@include variable.mq("md") {
+  margin-left: 150px;
 }
 }
 

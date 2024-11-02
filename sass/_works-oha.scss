@@ -431,5 +431,9 @@
   @include variable.mq("md") {
     gap: 30px;
   }
+
+  @include variable.mq("lg") {
+    gap: 100px;
+  }
 }
 
