@@ -4267,6 +4267,88 @@
   }
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.loading-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 9999;
+}
+
+.loading {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  left: 50%;
+  top: 50%;
+  margin: -24px 0 0 -24px;
+}
+.loading span {
+  -webkit-animation-name: loading;
+          animation-name: loading;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  display: block;
+  margin: 3px;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.loading span:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  background-color: #E5B0EA;
+}
+.loading span:nth-child(2) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  background-color: #F7DBF0;
+}
+.loading span:nth-child(3) {
+  clear: both;
+  float: right;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  background-color: #C0DBEA;
+}
+.loading span:nth-child(4) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+  background-color: #B5A0E9;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 48px;
@@ -4289,6 +4371,17 @@ body {
 
 .wrapper {
   overflow: hidden;
+}
+
+.top-wrapper {
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+.top-wrapper.is-visible {
+  display: block;
+  opacity: 1;
 }
 
 .main {

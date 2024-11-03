@@ -1,4 +1,20 @@
-// ドロワーメニュー
+// ローディング画面
+
+
+window.addEventListener('load', function() {
+  setTimeout(function() {
+      document.querySelector('.loading-wrapper').style.display = 'none';
+      const wrapper = document.querySelector('.top-wrapper');
+      wrapper.style.display = 'block';
+      requestAnimationFrame(() => {
+          wrapper.classList.add('is-visible');
+      });
+  }, 2000);
+});
+
+
+
+// ドロワーメニュー;
 
 jQuery("#js-drawer-icon").on("click", function(e) {
   e.preventDefault();

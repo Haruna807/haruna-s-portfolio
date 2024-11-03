@@ -15,6 +15,70 @@
 @use "about-page";
 
 
+// ローディング画面
+
+// @import "compass/css3";
+
+html,body{width:100%;height:100%;}
+.loading-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 9999;
+}
+$time: 1s;
+.loading {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  left: 50%;
+  top: 50%;
+  margin: -24px 0 0 -24px;
+  span {
+    animation-name: loading;
+    animation-duration: $time;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    display: block;
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    &:nth-child(1) {
+      animation-delay: 0s;
+      background-color: #E5B0EA;
+    }
+    &:nth-child(2) {
+      animation-delay: $time * .25;
+      background-color: #F7DBF0;
+    }
+    &:nth-child(3) {
+      clear: both;
+      float: right;
+      animation-delay: $time * .5;
+      background-color: #C0DBEA;
+    }
+    &:nth-child(4) {
+      animation-delay: $time * .75;
+      background-color: #B5A0E9;
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 
 // 共通
 
@@ -42,6 +106,20 @@ body {
 .wrapper {
   overflow: hidden;
 }
+
+.top-wrapper {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  &.is-visible {
+    display: block;
+    opacity: 1;
+  }
+}
+
+
+
 
 .main {
   margin-top: variable.$header-height-sp;
