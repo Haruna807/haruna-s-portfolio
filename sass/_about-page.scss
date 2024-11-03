@@ -59,20 +59,53 @@
 }
 
 .profile__info__image {
-  width: 220px;
+  width: 160px;
+  height: 160px;
   margin-inline: auto;
   position: relative;
+  margin-top: 50px;
+  background: center;
+  background: linear-gradient(96deg, rgba(230, 238, 207, 0.28) 0%, rgba(191, 206, 236, 0.31) 0.01%, rgba(216, 153, 216, 0.27) 96.62%, rgba(219, 148, 214, 0.26) 96.63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &.is-in-view {
     transition-delay: 0.7s;
   }
 
+  @include variable.mq("sm") {
+    width: 210px;
+    height: 210px;
+  }
+
   @include variable.mq("md") {
     transform: translateX(0);
     width: 240px;
+    height: 240px;
     position: static;
     margin-inline: 0;
+    margin-top: 30px;
   }
+
+  @include variable.mq("lg") {
+    margin-top: 50px;
+  }
+
+   img {
+      width: 130px;
+      height: 130px;
+
+      @include variable.mq("sm") {
+        width: 170px;
+        height: 170px;
+      }
+
+      @include variable.mq("md") {
+        width: 200px;
+        height: 200px;
+      }
+   }
 
 }
 
@@ -169,7 +202,11 @@
   }
 }
 
-@include variable.mq("md") {
+@include variable.mq("lg") {
+  margin-left: 90px;
+}
+
+@include variable.mq("xl") {
   margin-left: 150px;
 }
 }
