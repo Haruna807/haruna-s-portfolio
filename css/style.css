@@ -1520,6 +1520,18 @@
     font-size: 18px;
   }
 }
+.info-item__text a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease, -webkit-text-decoration 0.2s ease;
+  transition: color 0.2s ease, -webkit-text-decoration 0.2s ease;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+  transition: color 0.2s ease, text-decoration 0.2s ease, -webkit-text-decoration 0.2s ease;
+}
+.info-item__text a:hover {
+  color: #B5A0E9;
+  text-decoration: underline;
+}
 
 .info-item__text-c {
   margin-left: 20px;
