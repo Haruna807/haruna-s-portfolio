@@ -267,8 +267,11 @@
 
   @include variable.mq("md") {
     font-size: 17px;
-    font-size: 20px;
     width: 229px;
+  }
+
+  @include variable.mq("lg") {
+    font-size: 20px;
   }
 }
 

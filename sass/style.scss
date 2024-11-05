@@ -13,6 +13,7 @@
 @use "works-onomichi";
 @use "works-oha";
 @use "about-page";
+@use "works-pf";
 
 
 // ローディング画面
@@ -133,6 +134,14 @@ body {
 
   @include variable.mq("md") {
     display: none;
+  }
+}
+
+.hidden-sp-sm {
+  display: none;
+
+  @include variable.mq("sm") {
+    display: block;
   }
 }
 
