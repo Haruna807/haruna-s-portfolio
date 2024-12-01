@@ -107,6 +107,10 @@
     width: calc(100% - 10px);
   }
 
+  @include variable.mq("sm") {
+    width: calc(100% - 250px);
+  }
+
   @include variable.mq("lg") {
     width: calc(100% - 200px);
     margin-inline: auto;

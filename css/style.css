@@ -766,6 +766,11 @@
     width: calc(100% - 10px);
   }
 }
+@media screen and (min-width:600px) {
+  .works__slide {
+    width: calc(100% - 250px);
+  }
+}
 @media screen and (min-width:900px) {
   .works__slide {
     width: calc(100% - 200px);
