@@ -181,7 +181,7 @@
   }
 
   @include variable.mq("md") {
-    top: 8px;
+    top: 33px;
     height: 28px;
   }
 }
@@ -241,7 +241,7 @@
   top: 17px;
 
   @include variable.mq("sm") {
-    top: 29px;
+    top: 16px;
   }
 }
 
